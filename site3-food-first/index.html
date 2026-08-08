@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tofu Story · Sool Story — Korean Kitchen & Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&family=Noto+Serif+KR:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <h1 class="site-title">Tofu Story · Sool Story</h1>
+    <p class="site-tagline">Day & Night — Korean Kitchen & Bar</p>
+  </header>
+
+  <!-- Sticky Category Nav -->
+  <nav class="category-nav" id="categoryNav">
+    <div class="nav-scroll">
+      <button class="nav-pill active" data-target="tofu-stews">Tofu Stews</button>
+      <button class="nav-pill" data-target="rice-bowls">Rice Bowls</button>
+      <button class="nav-pill" data-target="sides">Sides</button>
+      <button class="nav-pill" data-target="soju-cocktails">Soju Cocktails</button>
+      <button class="nav-pill" data-target="makgeolli">Makgeolli</button>
+      <button class="nav-pill" data-target="beer-more">Beer & More</button>
+      <button class="nav-pill" data-target="small-plates">Small Plates</button>
+      <button class="nav-pill" data-target="skewers-grill">Skewers & Grill</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========== LIGHT SECTION (Day Menu) ========== -->
+    <div class="theme-light">
+
+      <!-- Tofu Stews -->
+      <section class="menu-section" id="tofu-stews">
+        <div class="section-header">
+          <h2>Sundubu Jjigae <span class="kr">순두부찌개</span></h2>
+          <p class="section-note">Base $14.99 vegetarian · +Beef/Chicken/Pork $3 · +Seafood $4</p>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #E8D5B7 0%, #D4A574 50%, #C4836A 100%);">
+            <span class="dish-image-label">순두부</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Original Sundubu <span class="kr">순두부찌개</span></h3>
+              <span class="dish-price">$14.99</span>
+            </div>
+            <p class="dish-desc">Silky soft tofu in rich, spicy broth</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #D4836A 0%, #C46B52 50%, #B85A3D 100%);">
+            <span class="dish-image-label">김치</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Kimchi Sundubu <span class="kr">김치 순두부</span></h3>
+              <span class="dish-price">$14.99</span>
+            </div>
+            <p class="dish-desc">Aged kimchi with soft tofu stew</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #7BAEC4 0%, #5A8FA8 50%, #C4836A 100%);">
+            <span class="dish-image-label">해물</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Seafood Sundubu <span class="kr">해물 순두부</span></h3>
+              <span class="dish-price">$18.99</span>
+            </div>
+            <p class="dish-desc">Shrimp, clam, and squid tofu stew</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #8B9E6B 0%, #7A9E7E 50%, #A8B88A 100%);">
+            <span class="dish-image-label">버섯</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Mushroom Sundubu <span class="kr">버섯 순두부</span></h3>
+              <span class="dish-price">$14.99</span>
+            </div>
+            <p class="dish-desc">Wild mushroom medley tofu stew</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #D4B896 0%, #C4A67A 50%, #B8956A 100%);">
+            <span class="dish-image-label">만두</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Dumpling Sundubu <span class="kr">만두 순두부</span></h3>
+              <span class="dish-price">$16.99</span>
+            </div>
+            <p class="dish-desc">Handmade dumplings in tofu stew</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rice Bowls -->
+      <section class="menu-section" id="rice-bowls">
+        <div class="section-header">
+          <h2>Rice Bowls <span class="kr">덮밥</span></h2>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #8B6B4A 0%, #A47D5E 50%, #C4A67A 100%);">
+            <span class="dish-image-label">불고기</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Bulgogi Bowl <span class="kr">불고기 덮밥</span></h3>
+              <span class="dish-price">$16.99</span>
+            </div>
+            <p class="dish-desc">Marinated beef over rice with egg</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #C4524A 0%, #D4644A 50%, #E07A5A 100%);">
+            <span class="dish-image-label">제육</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Spicy Pork Bowl <span class="kr">제육 덮밥</span></h3>
+              <span class="dish-price">$15.99</span>
+            </div>
+            <p class="dish-desc">Gochujang pork over rice</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #7A9E7E 0%, #A8B88A 50%, #D4C896 100%);">
+            <span class="dish-image-label">비빔밥</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Tofu Bibimbap <span class="kr">두부 비빔밥</span></h3>
+              <span class="dish-price">$14.99</span>
+            </div>
+            <p class="dish-desc">Crispy tofu, vegetables, gochujang</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sides & Extras -->
+      <section class="menu-section" id="sides">
+        <div class="section-header">
+          <h2>Sides & Extras <span class="kr">반찬</span></h2>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Steamed Rice <span class="kr">밥</span></h3>
+              <span class="dish-price">$2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Extra Tofu <span class="kr">두부 추가</span></h3>
+              <span class="dish-price">$3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Banchan Set <span class="kr">반찬</span></h3>
+              <span class="dish-price price--comp">Complimentary</span>
+            </div>
+            <p class="dish-desc">Rotating Korean side dishes</p>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- end theme-light -->
+
+    <!-- ========== DIVIDER ========== -->
+    <div class="day-night-divider">
+      <div class="divider-content">
+        <div class="divider-line"></div>
+        <p class="divider-text">Night Menu · <span class="kr">술 &amp; 안주</span></p>
+        <div class="divider-line"></div>
+      </div>
+    </div>
+
+    <!-- ========== DARK SECTION (Night Menu) ========== -->
+    <div class="theme-dark">
+
+      <!-- Soju Cocktails -->
+      <section class="menu-section" id="soju-cocktails">
+        <div class="section-header">
+          <h2>Soju Cocktails</h2>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #2D4A3A 0%, #4A7A5E 50%, #6B9E7A 100%);">
+            <span class="dish-image-label">수박</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Watermelon Soju <span class="kr">수박 소주</span></h3>
+              <span class="dish-price">$12</span>
+            </div>
+            <p class="dish-desc">Fresh watermelon blended with chilled soju</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #3A3A2A 0%, #6B6B3A 50%, #9E9E4A 100%);">
+            <span class="dish-image-label">유자</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Yuzu Highball <span class="kr">유자 하이볼</span></h3>
+              <span class="dish-price">$13</span>
+            </div>
+            <p class="dish-desc">Sparkling yuzu citrus with soju</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #4A2A2A 0%, #8A5A4A 50%, #D4944C 100%);">
+            <span class="dish-image-label">복숭아</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Peach Soju <span class="kr">복숭아 소주</span></h3>
+              <span class="dish-price">$12</span>
+            </div>
+            <p class="dish-desc">Sweet peach with premium soju</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #4A3A2A 0%, #8A6A3A 50%, #C49A4A 100%);">
+            <span class="dish-image-label">자몽</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Grapefruit Soju <span class="kr">자몽 소주</span></h3>
+              <span class="dish-price">$12</span>
+            </div>
+            <p class="dish-desc">Tart grapefruit with soju over ice</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #3A2A4A 0%, #6A4A7A 50%, #9A6A9E 100%);">
+            <span class="dish-image-label">리치</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Lychee Soju <span class="kr">리치 소주</span></h3>
+              <span class="dish-price">$13</span>
+            </div>
+            <p class="dish-desc">Floral lychee with soju</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Makgeolli -->
+      <section class="menu-section" id="makgeolli">
+        <div class="section-header">
+          <h2>Makgeolli <span class="kr">막걸리</span></h2>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #3A3A3A 0%, #5A5A4A 50%, #8A8A6A 100%);">
+            <span class="dish-image-label">막걸리</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Original Makgeolli <span class="kr">막걸리</span></h3>
+              <span class="dish-price">$9</span>
+            </div>
+            <p class="dish-desc">Traditional unfiltered rice wine</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #4A3A1A 0%, #8A6A2A 50%, #C49A3A 100%);">
+            <span class="dish-image-label">망고</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Mango Makgeolli <span class="kr">망고 막걸리</span></h3>
+              <span class="dish-price">$12</span>
+            </div>
+            <p class="dish-desc">Tropical mango-infused rice wine</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #2A2A3A 0%, #4A4A6A 50%, #6A6A9A 100%);">
+            <span class="dish-image-label">스파클링</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Sparkling Makgeolli <span class="kr">스파클링 막걸리</span></h3>
+              <span class="dish-price">$14</span>
+            </div>
+            <p class="dish-desc">Effervescent modern makgeolli</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Beer & More -->
+      <section class="menu-section" id="beer-more">
+        <div class="section-header">
+          <h2>Beer & More</h2>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Hite Extra Cold <span class="kr">하이트</span></h3>
+              <span class="dish-price">$8</span>
+            </div>
+            <p class="dish-desc">Korean lager, ice cold</p>
+          </div>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Cass Fresh <span class="kr">카스</span></h3>
+              <span class="dish-price">$8</span>
+            </div>
+            <p class="dish-desc">Light Korean beer</p>
+          </div>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Sapporo Draft <span class="kr">삿포로</span></h3>
+              <span class="dish-price">$9</span>
+            </div>
+            <p class="dish-desc">Japanese premium lager</p>
+          </div>
+        </div>
+
+        <div class="dish-card dish-card--compact" data-expanded="false">
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Hot Sake <span class="kr">열간 사케</span></h3>
+              <span class="dish-price">$14</span>
+            </div>
+            <p class="dish-desc">Warm sake, served traditional</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Small Plates -->
+      <section class="menu-section" id="small-plates">
+        <div class="section-header">
+          <h2>Small Plates <span class="kr">안주</span></h2>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #5A2A1A 0%, #8A4A2A 50%, #B86A3A 100%);">
+            <span class="dish-image-label">양념치킨</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Korean Fried Chicken <span class="kr">양념치킨</span></h3>
+              <span class="dish-price">$16</span>
+            </div>
+            <p class="dish-desc">Double-fried, gochujang glaze</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #6A2A2A 0%, #9A4A3A 50%, #C46A4A 100%);">
+            <span class="dish-image-label">떡볶이</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Tteokbokki <span class="kr">떡볶이</span></h3>
+              <span class="dish-price">$13</span>
+            </div>
+            <p class="dish-desc">Spicy rice cakes in gochujang sauce</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #4A3A1A 0%, #7A5A2A 50%, #A8793A 100%);">
+            <span class="dish-image-label">김치전</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Kimchi Pancake <span class="kr">김치전</span></h3>
+              <span class="dish-price">$14</span>
+            </div>
+            <p class="dish-desc">Crispy kimchi and scallion jeon</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #2A3A2A 0%, #4A5A3A 50%, #6A7A4A 100%);">
+            <span class="dish-image-label">잡채</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Japchae <span class="kr">잡채</span></h3>
+              <span class="dish-price">$13</span>
+            </div>
+            <p class="dish-desc">Glass noodles with seasonal vegetables</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #3A2A1A 0%, #6A4A2A 50%, #9A6A3A 100%);">
+            <span class="dish-image-label">만두</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Mandu <span class="kr">만두</span></h3>
+              <span class="dish-price">$12</span>
+            </div>
+            <p class="dish-desc">Pan-fried pork and vegetable dumplings</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #4A4A1A 0%, #7A7A2A 50%, #A8A83A 100%);">
+            <span class="dish-image-label">콘치즈</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Corn Cheese <span class="kr">콘치즈</span></h3>
+              <span class="dish-price">$11</span>
+            </div>
+            <p class="dish-desc">Sweet corn baked with mozzarella</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skewers & Grill -->
+      <section class="menu-section" id="skewers-grill">
+        <div class="section-header">
+          <h2>Skewers & Grill <span class="kr">꼬치 &amp; 구이</span></h2>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #4A2A1A 0%, #7A4A2A 50%, #A86A3A 100%);">
+            <span class="dish-image-label">꼬치</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Bulgogi Skewers <span class="kr">불고기 꼬치</span></h3>
+              <span class="dish-price">$16</span>
+            </div>
+            <p class="dish-desc">Marinated beef, grilled</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #5A1A1A 0%, #8A3A2A 50%, #B85A3A 100%);">
+            <span class="dish-image-label">삼겹살</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Spicy Pork Belly <span class="kr">매운 삼겹살</span></h3>
+              <span class="dish-price">$18</span>
+            </div>
+            <p class="dish-desc">Thick-cut, gochugaru spiced</p>
+          </div>
+        </div>
+
+        <div class="dish-card" data-expanded="false">
+          <div class="dish-image" style="background: linear-gradient(135deg, #3A2A2A 0%, #5A4A3A 50%, #7A6A4A 100%);">
+            <span class="dish-image-label">야키토리</span>
+          </div>
+          <div class="dish-info">
+            <div class="dish-top">
+              <h3 class="dish-name">Chicken Yakitori <span class="kr">치킨 야키토리</span></h3>
+              <span class="dish-price">$14</span>
+            </div>
+            <p class="dish-desc">Soy-glazed chicken skewers</p>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- end theme-dark -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p class="footer-address">123 Korean Kitchen Lane, Los Angeles, CA 90012</p>
+    <a href="tel:+12135551234" class="footer-phone">Tap to Call: (213) 555-1234</a>
+    <p class="footer-allergen">Please inform your server of any allergies or dietary restrictions. Menu items may contain common allergens including soy, shellfish, gluten, eggs, and sesame.</p>
+  </footer>
+
+  <script>
+    // ===== Scroll-spy with IntersectionObserver =====
+    const sections = document.querySelectorAll('.menu-section');
+    const pills = document.querySelectorAll('.nav-pill');
+    const navScroll = document.querySelector('.nav-scroll');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-120px 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          pills.forEach(pill => {
+            pill.classList.toggle('active', pill.dataset.target === id);
+            // Scroll active pill into view
+            if (pill.dataset.target === id) {
+              pill.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    // ===== Pill click smooth scroll =====
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const target = document.getElementById(pill.dataset.target);
+        if (target) {
+          const headerHeight = document.querySelector('.site-header').offsetHeight;
+          const navHeight = document.querySelector('.category-nav').offsetHeight;
+          const offset = headerHeight + navHeight + 8;
+          const y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ===== Expand/Collapse dish cards =====
+    document.querySelectorAll('.dish-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const isExpanded = card.dataset.expanded === 'true';
+        // Close all other cards
+        document.querySelectorAll('.dish-card[data-expanded="true"]').forEach(c => {
+          if (c !== card) c.dataset.expanded = 'false';
+        });
+        card.dataset.expanded = isExpanded ? 'false' : 'true';
+      });
+    });
+  </script>
+
+</body>
+</html>

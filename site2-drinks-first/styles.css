@@ -1,0 +1,403 @@
+/* =========================================
+   Tofu Story · Sool Story — Combined Menu
+   Site 2: Drinks-First, Dark-to-Light
+   ========================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* --- CSS Variables --- */
+:root {
+  /* Dark theme (Sool Story) */
+  --dark-bg: #1A1A1A;
+  --dark-accent: #D4944C;
+  --dark-text: #F5EDE0;
+  --dark-text-muted: rgba(245, 237, 224, 0.6);
+  --dark-card-bg: #242424;
+  --dark-card-border: rgba(212, 148, 76, 0.15);
+
+  /* Light theme (Tofu Story) */
+  --light-bg: #FAF7F2;
+  --light-accent: #7A9E7E;
+  --light-text: #2C2C2C;
+  --light-text-muted: rgba(44, 44, 44, 0.55);
+  --light-card-bg: #FFFFFF;
+  --light-card-border: rgba(122, 158, 126, 0.2);
+}
+
+/* --- Sticky Header --- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 14px 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(212, 148, 76, 0.2);
+}
+
+.site-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--dark-text);
+  letter-spacing: 0.02em;
+}
+
+.site-tagline {
+  font-size: 0.72rem;
+  color: var(--dark-accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* --- Sticky Category Nav --- */
+.category-nav {
+  position: sticky;
+  top: 60px; /* below header */
+  z-index: 99;
+  background: rgba(20, 20, 20, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px 0;
+}
+
+.nav-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nav-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-pill {
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(245, 237, 224, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.nav-pill:hover {
+  background: rgba(212, 148, 76, 0.15);
+  color: var(--dark-text);
+}
+
+.nav-pill.active {
+  background: var(--dark-accent);
+  color: #1A1A1A;
+  border-color: var(--dark-accent);
+  font-weight: 500;
+}
+
+/* --- Theme Sections --- */
+.theme-dark {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.theme-light {
+  background: var(--light-bg);
+  color: var(--light-text);
+}
+
+/* --- Menu Sections --- */
+.menu-section {
+  padding: 32px 16px 16px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.section-title .kr {
+  font-size: 1rem;
+  opacity: 0.6;
+  font-weight: 700;
+}
+
+.theme-dark .section-title {
+  color: var(--dark-accent);
+}
+
+.theme-light .section-title {
+  color: var(--light-accent);
+}
+
+.section-subtitle {
+  font-size: 0.78rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.theme-dark .section-subtitle {
+  color: var(--dark-text-muted);
+}
+
+.theme-light .section-subtitle {
+  color: var(--light-text-muted);
+}
+
+/* --- Menu Grid --- */
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+/* --- Dish Cards --- */
+.dish-card {
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.theme-dark .dish-card {
+  background: var(--dark-card-bg);
+  border: 1px solid var(--dark-card-border);
+}
+
+.theme-light .dish-card {
+  background: var(--light-card-bg);
+  border: 1px solid var(--light-card-border);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dish-card:active {
+  transform: scale(0.98);
+}
+
+/* Dish Image (gradient placeholder) */
+.dish-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 12px;
+  transition: aspect-ratio 0.3s ease;
+}
+
+.dish-image--small {
+  aspect-ratio: 3 / 1;
+}
+
+.dish-price,
+.dish-price-free {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.dish-price {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+
+.dish-price-free {
+  background: rgba(122, 158, 126, 0.85);
+  color: #fff;
+  font-size: 0.78rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Dish Info */
+.dish-info {
+  padding: 12px 14px 14px;
+}
+
+.dish-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.dish-name .kr {
+  font-weight: 400;
+  font-size: 0.82rem;
+  opacity: 0.55;
+  margin-left: 4px;
+}
+
+.dish-desc {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.theme-dark .dish-desc {
+  color: var(--dark-text-muted);
+}
+
+.theme-light .dish-desc {
+  color: var(--light-text-muted);
+}
+
+/* Expanded state */
+.dish-card.expanded .dish-image {
+  aspect-ratio: 4 / 3;
+}
+
+.dish-card.expanded .dish-image--small {
+  aspect-ratio: 16 / 9;
+}
+
+.dish-card.expanded {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transform: scale(1.01);
+}
+
+.theme-light .dish-card.expanded {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Day/Night Divider --- */
+.day-night-divider {
+  background: linear-gradient(to bottom, var(--dark-bg) 0%, #3a3530 25%, #8a8070 50%, #d8d0c4 75%, var(--light-bg) 100%);
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(140, 120, 100, 0.5);
+}
+
+.divider-text {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #4a4038;
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: #1A1A1A;
+  color: rgba(245, 237, 224, 0.7);
+  padding: 32px 20px 48px;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.footer-address {
+  margin-bottom: 8px;
+}
+
+.footer-phone {
+  display: inline-block;
+  color: var(--dark-accent);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: 1px solid rgba(212, 148, 76, 0.3);
+  border-radius: 24px;
+  margin-bottom: 16px;
+  transition: background 0.2s ease;
+}
+
+.footer-phone:hover {
+  background: rgba(212, 148, 76, 0.1);
+}
+
+.footer-allergen {
+  font-size: 0.68rem;
+  color: rgba(245, 237, 224, 0.4);
+  max-width: 340px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* --- Responsive: Tablet+ --- */
+@media (min-width: 600px) {
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .site-header {
+    padding: 16px 24px 12px;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .menu-section {
+    padding: 40px 24px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-section {
+    max-width: 960px;
+  }
+}

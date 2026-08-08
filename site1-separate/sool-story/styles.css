@@ -1,0 +1,360 @@
+/* ============================================
+   Sool Story — Dark/Moody Nightlife Menu
+   술 이야기 — Drinks & Late Night Bites
+   ============================================ */
+
+:root {
+  --bg: #1A1A1A;
+  --accent: #D4944C;
+  --accent-secondary: #C9A96E;
+  --text: #F5EDE0;
+  --card-overlay: rgba(26, 26, 26, 0.85);
+  --text-on-image: #F5EDE0;
+  --header-bg: rgba(26, 26, 26, 0.97);
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Sticky Header ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--header-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 16px 20px 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(212, 148, 76, 0.15);
+}
+
+.site-header h1 {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.site-header .tagline {
+  font-size: 0.8rem;
+  color: var(--accent-secondary);
+  margin-top: 2px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+/* ── Sticky Category Nav ── */
+.category-nav {
+  position: sticky;
+  top: 72px;
+  z-index: 99;
+  background: var(--header-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(212, 148, 76, 0.1);
+  padding: 10px 0;
+}
+
+.category-nav__track {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 0 16px;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.category-nav__track::-webkit-scrollbar {
+  display: none;
+}
+
+.pill {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding: 7px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(212, 148, 76, 0.35);
+  background: transparent;
+  color: var(--text);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* ── Menu Sections ── */
+.menu-content {
+  padding: 12px 16px 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  margin-bottom: 36px;
+}
+
+.section-title {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(212, 148, 76, 0.2);
+  letter-spacing: 0.02em;
+}
+
+/* ── Dish Cards ── */
+.dish-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dish-card:active {
+  transform: scale(0.985);
+}
+
+.dish-card__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.dish-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 16px 14px;
+  background: linear-gradient(to top, var(--card-overlay) 60%, transparent 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.dish-card__name {
+  font-family: 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-on-image);
+  line-height: 1.3;
+}
+
+.dish-card__name .korean {
+  display: block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: rgba(245, 237, 224, 0.7);
+  margin-top: 1px;
+}
+
+.dish-card__price {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--accent-secondary);
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+/* ── Expand/Collapse Description ── */
+.dish-card__details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  background: rgba(26, 26, 26, 0.95);
+  border-radius: 0 0 12px 12px;
+  margin-top: -14px;
+  margin-bottom: 14px;
+  padding: 0 16px;
+}
+
+.dish-card__details.expanded {
+  max-height: 120px;
+  padding: 14px 16px;
+}
+
+.dish-card__details p {
+  font-size: 0.85rem;
+  color: rgba(245, 237, 224, 0.75);
+  line-height: 1.5;
+}
+
+/* Adjust card border-radius when expanded */
+.dish-card.open {
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 0;
+}
+
+/* ── Gradient Placeholders (moody, rich tones) ── */
+.grad-soju-watermelon   { background: linear-gradient(135deg, #4a1a2e 0%, #8b2d4a 40%, #d4944c 100%); }
+.grad-soju-yuzu         { background: linear-gradient(135deg, #2a1f0a 0%, #6b5a2e 50%, #d4944c 100%); }
+.grad-soju-peach        { background: linear-gradient(135deg, #3d1f2a 0%, #8b5a4a 50%, #c9a96e 100%); }
+.grad-soju-grapefruit   { background: linear-gradient(135deg, #2e1a1a 0%, #8b3d3d 50%, #d4944c 100%); }
+.grad-soju-lychee       { background: linear-gradient(135deg, #2a1a2e 0%, #6b3d5a 50%, #c9a96e 100%); }
+
+.grad-mak-original      { background: linear-gradient(135deg, #1a1a10 0%, #4a4a2e 50%, #8b8b5a 100%); }
+.grad-mak-mango         { background: linear-gradient(135deg, #2e2a0a 0%, #8b6a1a 50%, #d4944c 100%); }
+.grad-mak-sparkling     { background: linear-gradient(135deg, #1a2a2e 0%, #3d6a6b 50%, #c9a96e 100%); }
+
+.grad-beer-hite         { background: linear-gradient(135deg, #1a1a2e 0%, #2e3d5a 50%, #5a7a9b 100%); }
+.grad-beer-cass         { background: linear-gradient(135deg, #1a1a1a 0%, #3d3d4a 50%, #6b6b7a 100%); }
+.grad-beer-sapporo      { background: linear-gradient(135deg, #2e1a0a 0%, #5a3d1a 50%, #8b6a3d 100%); }
+.grad-sake              { background: linear-gradient(135deg, #1a0a0a 0%, #4a1a1a 50%, #8b3d2e 100%); }
+
+.grad-plate-chicken     { background: linear-gradient(135deg, #3d0a0a 0%, #8b2e1a 50%, #d4944c 100%); }
+.grad-plate-tteokbokki  { background: linear-gradient(135deg, #4a0a0a 0%, #8b1a1a 50%, #c9503d 100%); }
+.grad-plate-pancake     { background: linear-gradient(135deg, #2e1a0a 0%, #6b4a2e 50%, #a07a4a 100%); }
+.grad-plate-japchae     { background: linear-gradient(135deg, #0a1a0a 0%, #2e4a2e 50%, #5a7a4a 100%); }
+.grad-plate-mandu       { background: linear-gradient(135deg, #2e2a1a 0%, #5a4a2e 50%, #8b7a5a 100%); }
+.grad-plate-corn        { background: linear-gradient(135deg, #2e2a0a 0%, #7a6a1a 50%, #c9a93d 100%); }
+
+.grad-grill-bulgogi     { background: linear-gradient(135deg, #3d1a0a 0%, #7a2e1a 50%, #c95a2e 100%); }
+.grad-grill-pork        { background: linear-gradient(135deg, #3d0a0a 0%, #6b1a1a 50%, #a03d2e 100%); }
+.grad-grill-yakitori    { background: linear-gradient(135deg, #2e1a0a 0%, #5a3d1a 50%, #a07a3d 100%); }
+
+/* ── Footer ── */
+.site-footer {
+  background: rgba(10, 10, 10, 0.9);
+  border-top: 1px solid rgba(212, 148, 76, 0.15);
+  padding: 32px 20px 40px;
+  text-align: center;
+}
+
+.site-footer p {
+  font-size: 0.82rem;
+  color: rgba(245, 237, 224, 0.6);
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.site-footer a:hover {
+  color: var(--accent-secondary);
+}
+
+.footer-phone {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+
+.footer-allergen {
+  font-size: 0.72rem !important;
+  color: rgba(245, 237, 224, 0.4) !important;
+  margin-top: 16px !important;
+  padding-top: 16px;
+  border-top: 1px solid rgba(212, 148, 76, 0.1);
+}
+
+.footer-link-tofu {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 24px;
+  border: 1px solid var(--accent);
+  border-radius: 50px;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link-tofu:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ── Responsive ── */
+@media (min-width: 480px) {
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.45rem;
+  }
+
+  .dish-card__name {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-padding-top: 130px;
+  }
+
+  .menu-content {
+    max-width: 680px;
+    padding: 20px 24px 60px;
+  }
+
+  .site-header {
+    padding: 20px 24px 14px;
+  }
+
+  .site-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .dish-card__overlay {
+    padding: 50px 20px 18px;
+  }
+
+  .dish-card__name {
+    font-size: 1.15rem;
+  }
+
+  .dish-card__price {
+    font-size: 1.15rem;
+  }
+}
