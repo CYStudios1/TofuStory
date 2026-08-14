@@ -782,6 +782,12 @@ body {
     text-align: center;
   }
 
+  .hero-image {
+    width: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .hero-right {
     display: none;
   }

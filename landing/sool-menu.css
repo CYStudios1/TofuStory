@@ -199,6 +199,18 @@ body {
 .hero-left {
   flex: 1;
   max-width: 400px;
+  position: relative;
+}
+
+.hero-image {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 16px;
 }
 
 .hero-right {
@@ -561,6 +573,10 @@ body {
   .hero-left {
     max-width: 100%;
     text-align: center;
+  }
+
+  .hero-image {
+    width: 250px;
   }
 
   .hero-right {
