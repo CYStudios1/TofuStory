@@ -181,6 +181,13 @@ body {
   padding: 140px 100px 100px;
 }
 
+.hero-image {
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
 /* --- Hero Text --- */
 .hero-text {
   margin-bottom: 200px;
