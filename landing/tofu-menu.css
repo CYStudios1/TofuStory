@@ -137,7 +137,7 @@ body {
 .sub-nav {
   display: flex;
   gap: 4px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(243, 241, 237, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 8px;
@@ -198,9 +198,9 @@ body {
 }
 
 .hero-heading {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 52px;
-  font-weight: 700;
+  font-weight: 500;
   color: #2c2c2c;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -227,16 +227,22 @@ body {
 .section-heading span {
   font-family: 'Cinzel', serif;
   font-weight: 700;
-  font-size: 36px;
-  color: #2c2c2c;
+  font-size: 42px;
+  color: #BB3635;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.05em;
   display: inline-block;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-underline-offset: 4px;
 }
 
 .section-heading .heading-icon {
-  margin-right: 12px;
+  margin-left: 12px;
+  margin-right: 0;
   font-size: 28px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .section-heading .heading-kr {
