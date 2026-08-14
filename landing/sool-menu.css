@@ -429,6 +429,48 @@ body {
   border: 1px solid rgba(212, 148, 76, 0.35);
 }
 
+/* --- Drinks Split Layout (Soju + Beer) --- */
+.drinks-split {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.drinks-group {
+  flex: 1;
+}
+
+.drinks-group--left .menu-row {
+  justify-content: flex-start;
+}
+
+.drinks-group--right .menu-row {
+  justify-content: flex-end;
+}
+
+.group-heading--right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.group-heading--right::after {
+  display: none;
+}
+
+.group-heading--right::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(245, 237, 224, 0.12);
+}
+
+/* --- Bottle image size --- */
+.drinks-group .item-image {
+  width: 80px;
+  height: 160px;
+  aspect-ratio: auto;
+}
+
 /* --- Footer --- */
 .site-footer {
   background: rgba(20, 20, 20, 0.9);
