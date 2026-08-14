@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TofuStory & SoolStory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <a href="tofu-menu.html" class="nav-link">Tofu Menu</a>
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="sool-menu.html" class="nav-link">Sool Menu</a>
+  </nav>
+
+  <!-- Split Landing -->
+  <div class="split-container">
+
+    <!-- TofuStory Side -->
+    <div class="split-side tofu-side" id="tofuSide">
+      <div class="side-texture"></div>
+      <div class="side-content">
+        <img src="assets/tofustory-logo.png" alt="TofuStory" class="brand-logo tofu-logo">
+        <a href="tofu-menu.html" class="cta-btn tofu-btn">
+          <span class="cta-text">See TofuStory Menu</span>
+          <span class="cta-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SoolStory Side -->
+    <div class="split-side sool-side" id="soolSide">
+      <div class="side-texture"></div>
+      <div class="side-content">
+        <img src="assets/soolstory-logo.png" alt="SoolStory — Korean Tapas Bar" class="brand-logo sool-logo">
+        <a href="sool-menu.html" class="cta-btn sool-btn">
+          <span class="cta-text">See SoolStory Menu</span>
+          <span class="cta-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const container = document.querySelector('.split-container');
+    const tofuSide = document.getElementById('tofuSide');
+    const soolSide = document.getElementById('soolSide');
+
+    tofuSide.addEventListener('mouseenter', () => {
+      container.classList.add('hover-tofu');
+      container.classList.remove('hover-sool');
+    });
+
+    soolSide.addEventListener('mouseenter', () => {
+      container.classList.add('hover-sool');
+      container.classList.remove('hover-tofu');
+    });
+
+    container.addEventListener('mouseleave', () => {
+      container.classList.remove('hover-tofu', 'hover-sool');
+    });
+  </script>
+
+</body>
+</html>

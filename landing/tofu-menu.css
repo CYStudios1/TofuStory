@@ -1,0 +1,1074 @@
+/* =========================================
+   TofuStory — Menu Page
+   ========================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2c2c2c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --- Background Texture --- */
+.bg-texture {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url('assets/texture-menu-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* --- Header Logos --- */
+.menu-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 100px;
+  pointer-events: none;
+}
+
+.header-logo img {
+  height: auto;
+  object-fit: contain;
+  pointer-events: auto;
+}
+
+.header-logo--tofu img {
+  width: 60px;
+}
+
+.header-logo--sool img {
+  width: 80px;
+  filter:
+    brightness(0.3)
+    drop-shadow(0 0 4px rgba(0, 0, 0, 0.1));
+}
+
+/* --- Full-width nav background --- */
+.nav-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: 100px;
+  background: rgba(245, 240, 232, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* --- Floating Navigation --- */
+.floating-nav {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-bar {
+  background: rgba(50, 50, 50, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 8px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.25),
+    0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav-bar-inner {
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding: 8px 20px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-link.active {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* --- Sub Navigation --- */
+.sub-nav {
+  display: flex;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 4px 6px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sub-nav-scroll {
+  display: flex;
+  gap: 4px;
+}
+
+.sub-link {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 6px 14px;
+  border-radius: 5px;
+  color: rgba(44, 44, 44, 0.55);
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.sub-link:hover {
+  color: rgba(44, 44, 44, 0.8);
+}
+
+.sub-link.active {
+  background: rgba(44, 44, 44, 0.08);
+  color: #2c2c2c;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* --- Main Content --- */
+.menu-main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 140px 100px 100px;
+}
+
+/* --- Hero Text --- */
+.hero-text {
+  text-align: center;
+  margin-bottom: var(--gap-section);
+  padding-top: 140px;
+}
+
+.hero-korean {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.45);
+  letter-spacing: 0.4em;
+  margin-bottom: 16px;
+}
+
+.hero-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px;
+  font-weight: 700;
+  color: #2c2c2c;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-accent {
+  color: #BB3635;
+}
+
+.hero-sub {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.55);
+  line-height: 1.7;
+}
+
+/* --- Section Headings --- */
+.section-heading {
+  text-align: center;
+  margin-bottom: var(--gap-block);
+}
+
+.section-heading span {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  display: inline-block;
+}
+
+.section-heading .heading-icon {
+  margin-right: 12px;
+  font-size: 28px;
+}
+
+.section-heading .heading-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.4);
+  letter-spacing: 0.05em;
+  margin-left: 12px;
+}
+
+/* --- Group Headings (sub-sections) --- */
+.group-heading {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.group-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(44, 44, 44, 0.15);
+}
+
+.group-heading .heading-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.35);
+  letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 0.83rem;
+  color: rgba(44, 44, 44, 0.5);
+  margin-top: 0.85rem;
+  margin-bottom: var(--gap-block);
+  font-weight: 300;
+  line-height: 1.55;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.special-heading {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #2c2c2c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 16px;
+}
+
+/* --- Page Rhythm --- */
+:root {
+  --gap-section: clamp(4.5rem, 9vw, 7.5rem);
+  --gap-block: clamp(2rem, 4vw, 3rem);
+}
+
+/* --- Menu Section --- */
+.menu-section {
+  margin-bottom: 0;
+  padding: var(--gap-section) 0;
+}
+
+.menu-section:nth-child(odd) {
+  background: rgba(215, 205, 190, 0.15);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50% + 100px);
+  padding-right: calc(50vw - 50% + 100px);
+}
+
+.menu-sections-wrapper {
+  margin-top: 0;
+}
+
+.landing-section {
+  margin-bottom: 0;
+}
+
+/* --- Menu Rows --- */
+.menu-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.6rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* --- Menu Item --- */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 auto;
+  width: 160px;
+}
+
+/* --- Item Image --- */
+.item-image {
+  aspect-ratio: 1;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.item-image--large {
+  width: 340px;
+  aspect-ratio: auto;
+  height: 340px;
+}
+
+/* --- Item Name --- */
+.item-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin: 0 0 0.15rem;
+  min-height: 2.6em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* --- Item Korean Name --- */
+.item-name-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.4);
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+
+/* --- Item Description --- */
+.item-desc {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.83rem;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.55);
+  text-align: center;
+  line-height: 1.55;
+  margin: 0 0 0.7rem;
+  flex: 1;
+  max-width: 200px;
+}
+
+/* --- Item Price --- */
+.item-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* --- Item Tags --- */
+.item-tag {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.63rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-top: 0.45rem;
+}
+
+.item-tag--vegetarian {
+  color: rgba(44, 44, 44, 0.6);
+  border: 1px solid rgba(44, 44, 44, 0.25);
+}
+
+.item-tag--spicy {
+  color: #BB3635;
+  border: 1px solid rgba(187, 54, 53, 0.35);
+}
+
+/* --- Divider (dashed line for add-ons) --- */
+.item-divider {
+  width: 160px;
+  height: 1px;
+  border-top: 1.5px dashed rgba(44, 44, 44, 0.15);
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+/* --- Add-on text --- */
+.item-addons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.item-addon-title {
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin-bottom: 3px;
+}
+
+.item-addon {
+  font-size: 0.78rem;
+  color: rgba(44, 44, 44, 0.5);
+  line-height: 1.55;
+}
+
+/* --- Appetizer Layout --- */
+.appetizer-split {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.appetizer-group {
+  width: 100%;
+}
+
+.appetizer-group .menu-row {
+  justify-content: center;
+}
+
+.appetizer-divider {
+  display: none;
+}
+
+/* --- Section Header (heading + subtitle) --- */
+.section-header {
+  margin-bottom: 0;
+}
+
+/* --- Stew Rows --- */
+.stew-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+
+/* --- BBQ wrapper --- */
+.bbq-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* --- Special Item (side-by-side) --- */
+.special-section {
+  width: 100%;
+  padding: var(--gap-section) 0;
+}
+
+.special-layout {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.special-image {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 350px;
+}
+
+.special-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.special-info {
+  flex: 1;
+}
+
+.special-label {
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #BB3635;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.special-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #2c2c2c;
+  margin-bottom: 6px;
+}
+
+.special-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.4);
+  margin-bottom: 20px;
+}
+
+.special-desc {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(44, 44, 44, 0.6);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 380px;
+}
+
+.special-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.special-serves {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(44, 44, 44, 0.4);
+  letter-spacing: 0.1em;
+  margin-left: 8px;
+}
+
+/* --- Footer --- */
+.site-footer {
+  background: rgba(245, 240, 232, 0.9);
+  color: rgba(44, 44, 44, 0.75);
+  padding: 60px 100px 32px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.1);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-heading {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #2c2c2c;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgba(44, 44, 44, 0.55);
+  transition: color 0.25s ease;
+}
+
+.footer-link:hover {
+  color: #2c2c2c;
+}
+
+.footer-call-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 18px;
+  border: 1px solid rgba(44, 44, 44, 0.2);
+  border-radius: 20px;
+  color: rgba(44, 44, 44, 0.7);
+  text-decoration: none;
+  font-size: 12.5px;
+  transition: all 0.25s ease;
+}
+
+.footer-call-btn:hover {
+  background: rgba(44, 44, 44, 0.06);
+  border-color: rgba(44, 44, 44, 0.35);
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 12px;
+  color: rgba(44, 44, 44, 0.3);
+}
+
+
+/* ============================================
+   MOBILE — Tablet (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+
+  /* --- Layout --- */
+  .menu-main {
+    padding: 120px 20px 48px;
+  }
+
+  .menu-header {
+    padding: 14px 20px;
+  }
+
+  .header-logo--tofu img { width: 48px; }
+  .header-logo--sool img { width: 48px; }
+
+  /* --- Navigation --- */
+  .floating-nav {
+    top: 14px;
+    gap: 4px;
+    width: calc(100% - 40px);
+  }
+
+  .nav-bar {
+    padding: 4px 6px;
+    width: 100%;
+  }
+
+  .nav-bar-inner {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .sub-nav {
+    padding: 3px 5px;
+    width: 100%;
+  }
+
+  .sub-nav-scroll {
+    gap: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sub-link {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  /* --- Hero --- */
+  .hero-text {
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .hero-heading {
+    font-size: 36px;
+  }
+
+  .hero-korean {
+    font-size: 12px;
+  }
+
+  .hero-sub {
+    font-size: 14px;
+  }
+
+  /* --- Sections --- */
+  .menu-section {
+    padding: 40px 0;
+  }
+
+  .menu-section:nth-child(odd) {
+    padding-left: calc(50vw - 50% + 20px);
+    padding-right: calc(50vw - 50% + 20px);
+  }
+
+  .section-heading span {
+    font-size: 24px;
+    letter-spacing: 0.15em;
+  }
+
+  .section-heading .heading-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  .section-heading .heading-kr {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .group-heading {
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  /* --- Food Cards: 2 per row on tablet --- */
+  .menu-row {
+    gap: 2rem 1.1rem;
+    justify-content: center;
+  }
+
+  .menu-item {
+    width: calc(50% - 12px);
+    max-width: 180px;
+  }
+
+  .item-image {
+    width: 140px;
+    margin-bottom: 0.7rem;
+  }
+
+  .item-name {
+    font-size: 16px;
+    min-height: 2.4em;
+  }
+
+  .item-name-kr {
+    font-size: 12px;
+  }
+
+  .item-desc {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .item-price {
+    font-size: 16px;
+  }
+
+  .item-tag {
+    font-size: 10px;
+  }
+
+  .item-divider {
+    width: 100%;
+  }
+
+  .item-addon-title {
+    font-size: 14px;
+  }
+
+  .item-addon {
+    font-size: 14px;
+  }
+
+  /* --- Appetizers --- */
+  .appetizer-split {
+    gap: 40px;
+  }
+
+  /* --- Stew rows --- */
+  .stew-rows {
+    gap: 2rem;
+  }
+
+  /* --- BBQ --- */
+  .bbq-wrapper {
+    gap: 40px;
+  }
+
+  /* --- Spicy Galbi Special --- */
+  .special-layout {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+    max-width: 100%;
+  }
+
+  .special-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .special-info {
+    text-align: center;
+  }
+
+  .special-title {
+    font-size: 32px;
+  }
+
+  .special-desc {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  .special-price {
+    font-size: 26px;
+  }
+
+  .special-section {
+    padding: 40px 0;
+  }
+
+  /* --- Footer --- */
+  .site-footer {
+    padding: 40px 20px 24px;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footer-col {
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+/* ============================================
+   MOBILE — Phone (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+
+  /* --- Layout --- */
+  .menu-main {
+    padding: 110px 16px 40px;
+  }
+
+  .menu-header {
+    padding: 12px 16px;
+  }
+
+  .header-logo--tofu img { width: 40px; }
+  .header-logo--sool img { width: 40px; }
+
+  /* --- Navigation --- */
+  .floating-nav {
+    top: 10px;
+    width: calc(100% - 32px);
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .sub-link {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  /* --- Hero --- */
+  .hero-text {
+    padding-top: 40px;
+    margin-bottom: 32px;
+  }
+
+  .hero-heading {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .hero-korean {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .hero-sub {
+    font-size: 13px;
+  }
+
+  .hero-sub br {
+    display: none;
+  }
+
+  /* --- Sections --- */
+  .menu-section {
+    padding: 32px 0;
+  }
+
+  .menu-section:nth-child(odd) {
+    padding-left: calc(50vw - 50% + 16px);
+    padding-right: calc(50vw - 50% + 16px);
+  }
+
+  .section-heading span {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .section-heading .heading-icon {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+
+  .section-heading .heading-kr {
+    font-size: 12px;
+    margin-left: 6px;
+  }
+
+  .group-heading {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+  }
+
+  .group-heading .heading-kr {
+    font-size: 12px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+    padding: 0;
+  }
+
+  /* --- Food Cards: 2 per row, tighter --- */
+  .menu-row {
+    gap: 1.8rem 0.8rem;
+  }
+
+  .menu-item {
+    width: calc(50% - 8px);
+    max-width: 160px;
+  }
+
+  .item-image {
+    width: 120px;
+  }
+
+  .item-name {
+    font-size: 15px;
+    min-height: 2.2em;
+  }
+
+  .item-desc {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .item-price {
+    font-size: 15px;
+  }
+
+  .item-addon-title {
+    font-size: 13px;
+  }
+
+  .item-addon {
+    font-size: 13px;
+  }
+
+  /* --- Spicy Galbi Special --- */
+  .special-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .special-title {
+    font-size: 26px;
+  }
+
+  .special-kr {
+    font-size: 14px;
+  }
+
+  .special-desc {
+    font-size: 13px;
+  }
+
+  .special-price {
+    font-size: 22px;
+  }
+
+  .special-serves {
+    font-size: 11px;
+  }
+
+  /* --- Footer --- */
+  .site-footer {
+    padding: 32px 16px 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+
+  .footer-heading {
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}

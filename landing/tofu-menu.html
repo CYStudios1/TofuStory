@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TofuStory — Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tofu-menu.css">
+</head>
+<body>
+
+  <!-- Background texture -->
+  <div class="bg-texture"></div>
+
+  <!-- Full-width nav background -->
+  <div class="nav-backdrop"></div>
+
+  <!-- Header Logos -->
+  <header class="menu-header">
+    <div class="header-logo header-logo--tofu">
+      <img src="assets/tofustory-logo.png" alt="TofuStory">
+    </div>
+    <div class="header-logo header-logo--sool">
+      <img src="assets/soolstory-logo.png" alt="SoolStory">
+    </div>
+  </header>
+
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-bar">
+      <div class="nav-bar-inner">
+        <a href="tofu-menu.html" class="nav-link active">Tofu Menu</a>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sool-menu.html" class="nav-link">Sool Menu</a>
+      </div>
+    </div>
+    <div class="sub-nav">
+      <div class="sub-nav-scroll">
+        <a href="#new-items" class="sub-link active">New Items</a>
+        <a href="#appetizers" class="sub-link">Appetizers</a>
+        <a href="#soon-tofu" class="sub-link">Soon Tofu Stews</a>
+        <a href="#bab" class="sub-link">Bab</a>
+        <a href="#bbq" class="sub-link">BBQ</a>
+        <a href="#specials" class="sub-link">Specials</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="menu-main">
+
+    <!-- Landing: Contact + New Items -->
+    <div class="landing-section">
+
+      <!-- Hero Text -->
+      <div class="hero-text">
+        <p class="hero-korean">두 부 이 야 기</p>
+        <h1 class="hero-heading">Tofu, made here<br>every <span class="hero-accent">morning</span>.</h1>
+        <p class="hero-sub">Soon tofu curdled in house from non-GMO organic soybeans,<br>served bubbling in stone. Everything below comes with steamed rice.</p>
+      </div>
+
+      <!-- ==================== NEW MENU ITEMS ==================== -->
+      <section class="menu-section" id="new-items">
+        <div class="section-heading"><span><span class="heading-icon">&#x1F38D;</span>NEW THIS SEASON</span></div>
+
+        <div class="menu-row">
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="assets/menu/5.png" alt="Kalguksu">
+            </div>
+            <p class="item-name">Kalguksu</p>
+            <p class="item-name-kr">&#xCE7C;&#xAD6D;&#xC218;</p>
+            <p class="item-price">$14.99</p>
+            <div class="item-divider"></div>
+            <div class="item-addons">
+              <p class="item-addon-title">Add ons</p>
+              <p class="item-addon">$3 | Beef, Chicken, Pork</p>
+              <p class="item-addon">$4 | Seafood</p>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="assets/menu/6.png" alt="Kings Rib Steak">
+            </div>
+            <p class="item-name">King's Rib Steak</p>
+            <p class="item-name-kr">&#xC655;&#xAC08;&#xBE44;&#xC2A4;&#xD14C;&#xC774;&#xD06C;</p>
+            <p class="item-price">$39.99</p>
+            <div class="item-divider"></div>
+            <div class="item-addons">
+              <p class="item-addon-title">Add ons</p>
+              <p class="item-addon">$3 | Beef, Chicken, Pork</p>
+              <p class="item-addon">$4 | Seafood</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Remaining sections -->
+    <div class="menu-sections-wrapper">
+
+      <!-- ==================== APPETIZERS ==================== -->
+      <section class="menu-section" id="appetizers">
+        <div class="section-heading"><span><span class="heading-icon">&#x1F961;</span>APPETIZERS<span class="heading-kr">&#xC560;&#xD53C;&#xD0C0;&#xC774;&#xC800;</span></span></div>
+
+        <div class="appetizer-split">
+          <!-- Dumplings -->
+          <div class="appetizer-group">
+            <h3 class="group-heading">DUMPLINGS <span class="heading-kr">&#xB9CC;&#xB450;</span></h3>
+            <div class="menu-row">
+              <div class="menu-item">
+                <div class="item-image">
+                  <img src="assets/menu/7.png" alt="Vegetable Dumplings">
+                </div>
+                <p class="item-name">Vegetable</p>
+                <p class="item-desc">Pan-fried, stuffed with seasonal veggies.</p>
+                <p class="item-price">$12.99</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-image">
+                  <img src="assets/menu/8.png" alt="Kimchi Pork Dumplings">
+                </div>
+                <p class="item-name">Kimchi Pork</p>
+                <p class="item-desc">Spicy kimchi and pork, crispy edges.</p>
+                <p class="item-price">$12.99</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vertical Divider -->
+          <div class="appetizer-divider"></div>
+
+          <!-- Korean Pancake -->
+          <div class="appetizer-group">
+            <h3 class="group-heading">KOREAN PANCAKE <span class="heading-kr">&#xC804;</span></h3>
+            <div class="menu-row">
+              <div class="menu-item">
+                <div class="item-image">
+                  <img src="assets/menu/9.png" alt="Scallion Pancake">
+                </div>
+                <p class="item-name">Scallion Pancake</p>
+                <p class="item-desc">Crispy, golden, loaded with green onion.</p>
+                <p class="item-price">$17.99</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-image">
+                  <img src="assets/menu/10.png" alt="Kimchi Pancake">
+                </div>
+                <p class="item-name">Kimchi Pancake</p>
+                <p class="item-desc">Aged kimchi, pan-fried until crisp.</p>
+                <p class="item-price">$17.99</p>
+              </div>
+              <div class="menu-item">
+                <div class="item-image">
+                  <img src="assets/menu/11.png" alt="Seafood Pancake">
+                </div>
+                <p class="item-name">Seafood Pancake</p>
+                <p class="item-desc">Shrimp, squid, and scallion in a crispy jeon.</p>
+                <p class="item-price">$19.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SOON TOFU STEWS ==================== -->
+      <section class="menu-section" id="soon-tofu">
+        <div class="section-header">
+          <div class="section-heading"><span><span class="heading-icon">&#x1F372;</span>SOON TOFU STEWS<span class="heading-kr">&#xC21C;&#xB450;&#xBD80;&#xCC0C;&#xAC1C;</span></span></div>
+          <p class="section-subtitle">Made daily in house from non-GMO organic soybeans. Every stew arrives bubbling in stone with steamed rice and banchan.</p>
+        </div>
+
+        <div class="stew-rows">
+          <div class="menu-row">
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/12.png" alt="Veggie Soon Tofu">
+              </div>
+              <p class="item-name">Veggie Soon Tofu</p>
+              <p class="item-desc">Mushroom and zucchini in a clean vegetable broth.</p>
+              <p class="item-price">$16.99</p>
+              <span class="item-tag item-tag--vegetarian">Vegetarian</span>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/13.png" alt="Kimchi Soon Tofu">
+              </div>
+              <p class="item-name">Kimchi Soon Tofu</p>
+              <p class="item-desc">House kimchi aged until sour, then stewed down.</p>
+              <p class="item-price">$17.99</p>
+              <span class="item-tag item-tag--spicy">Spicy</span>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/14.png" alt="Ham & Sausage Soon Tofu">
+              </div>
+              <p class="item-name">Ham &amp; Sausage Soon Tofu</p>
+              <p class="item-desc">The budae-jjigae treatment — smoky, rich, unapologetic.</p>
+              <p class="item-price">$17.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/15.png" alt="Mandu Soon Tofu">
+              </div>
+              <p class="item-name">Mandu Soon Tofu</p>
+              <p class="item-desc">Pork dumplings dropped straight into the pot.</p>
+              <p class="item-price">$17.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/16.png" alt="Pork Soon Tofu">
+              </div>
+              <p class="item-name">Pork Soon Tofu</p>
+              <p class="item-desc">Sliced pork belly, slow-rendered into the broth.</p>
+              <p class="item-price">$17.99</p>
+            </div>
+          </div>
+
+          <div class="menu-row">
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/17.png" alt="Beef Soon Tofu">
+              </div>
+              <p class="item-name">Beef Soon Tofu</p>
+              <p class="item-desc">Brisket simmered until it falls apart.</p>
+              <p class="item-price">$17.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/18.png" alt="Oyster Soon Tofu">
+              </div>
+              <p class="item-name">Oyster Soon Tofu</p>
+              <p class="item-desc">Briny and delicate. The one regulars order in winter.</p>
+              <p class="item-price">$17.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/19.png" alt="Seafood Soon Tofu">
+              </div>
+              <p class="item-name">Seafood Soon Tofu</p>
+              <p class="item-desc">Shrimp, clam, mussel and squid.</p>
+              <p class="item-price">$18.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/20.png" alt="Mixed Soon Tofu">
+              </div>
+              <p class="item-name">Mixed Soon Tofu</p>
+              <p class="item-desc">Beef, pork and seafood together. Can't decide? This one.</p>
+              <p class="item-price">$17.99</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BAB ==================== -->
+      <section class="menu-section" id="bab">
+        <div class="section-heading"><span><span class="heading-icon">&#x1F35A;</span>BAB &middot; RICE<span class="heading-kr">&#xBC25;</span></span></div>
+
+        <div class="menu-row">
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="assets/menu/21.png" alt="Beef Bab">
+            </div>
+            <p class="item-name">Beef Bab</p>
+            <p class="item-desc">Bulgogi over steamed rice.</p>
+            <p class="item-price">$10.99</p>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="assets/menu/22.png" alt="Spicy Pork Bab">
+            </div>
+            <p class="item-name">Spicy Pork Bab</p>
+            <p class="item-desc">Gochujang pork over rice.</p>
+            <p class="item-price">$10.99</p>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="assets/menu/23.png" alt="Kimchi Bab">
+            </div>
+            <p class="item-name">Kimchi Bab</p>
+            <p class="item-desc">Stir-fried kimchi over rice.</p>
+            <p class="item-price">$10.99</p>
+          </div>
+          <div class="menu-item">
+            <div class="item-image">
+              <img src="assets/menu/24.png" alt="Bibimbap">
+            </div>
+            <p class="item-name">Bibimbap</p>
+            <p class="item-desc">Mixed vegetables, egg, and gochujang.</p>
+            <p class="item-price">$10.99</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BBQ ==================== -->
+      <section class="menu-section" id="bbq">
+        <div class="section-heading"><span><span class="heading-icon">&#x1F525;</span>BBQ<span class="heading-kr">&#xBB38;</span></span></div>
+
+        <div class="bbq-wrapper">
+          <div class="menu-row">
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/29.png" alt="Beef Bulgogi">
+              </div>
+              <p class="item-name">Beef Bulgogi</p>
+              <p class="item-desc">Marinated beef, grilled over flame.</p>
+              <p class="item-price">$28.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/26.png" alt="Pork Bulgogi">
+              </div>
+              <p class="item-name">Pork Bulgogi</p>
+              <p class="item-desc">Gochujang-marinated pork, charred and sweet.</p>
+              <p class="item-price">$26.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/27.png" alt="BBQ Ribs">
+              </div>
+              <p class="item-name">BBQ Ribs</p>
+              <p class="item-desc">Soy-garlic glazed short ribs.</p>
+              <p class="item-price">$29.99</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-image">
+                <img src="assets/menu/28.png" alt="Spicy BBQ Chicken">
+              </div>
+              <p class="item-name">Spicy BBQ Chicken</p>
+              <p class="item-desc">Fire-grilled chicken, gochugaru kick.</p>
+              <p class="item-price">$26.99</p>
+            </div>
+          </div>
+
+          <!-- BBQ SPECIAL -->
+          <div class="special-section" id="specials">
+            <div class="special-layout">
+              <div class="special-image">
+                <img src="assets/menu/25.png" alt="Spicy Galbi">
+              </div>
+              <div class="special-info">
+                <p class="special-label">TO SHARE</p>
+                <h3 class="special-title">Spicy Galbi</h3>
+                <p class="special-kr">매운갈비찜</p>
+                <p class="special-desc">Braised short rib under a blanket of melted cheese, finished at the table. Comes with rice, banchan and enough for the whole table to fight over.</p>
+                <p class="special-price">$64.99 <span class="special-serves">SERVES 2</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4 class="footer-heading">Visit Us</h4>
+        <p>85 Harvard Ave, Allston, MA 02134</p>
+        <p>(857) 316-2104</p>
+        <a href="tel:+18573162104" class="footer-call-btn">Tap to Call</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Hours</h4>
+        <p>Mon - Fri: 5:00pm - 2:00am</p>
+        <p>Sat - Sun: 12:00pm - 2:00am</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Menu</h4>
+        <a href="tofu-menu.html" class="footer-link">TofuStory Menu</a>
+        <a href="sool-menu.html" class="footer-link">SoolStory Menu</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="footer-social">
+          <a href="#" class="footer-link">Instagram</a>
+          <a href="#" class="footer-link">Facebook</a>
+          <a href="#" class="footer-link">Yelp</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TofuStory & SoolStory. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-spy for sub-nav
+    const sections = document.querySelectorAll('.menu-section, .special-section');
+    const subLinks = document.querySelectorAll('.sub-link');
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-200px 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          subLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      if (section.id) observer.observe(section);
+    });
+
+    // Smooth scroll for sub-nav and nav links
+    document.querySelectorAll('.sub-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          const offset = 140;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

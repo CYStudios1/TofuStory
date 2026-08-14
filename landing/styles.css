@@ -1,0 +1,310 @@
+/* =========================================
+   TofuStory & SoolStory — Landing Page
+   Split-screen with hover expand
+   ========================================= */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* --- Floating Navigation --- */
+.floating-nav {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(50, 50, 50, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 6px 8px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.25),
+    0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-link.active {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* --- Split Container --- */
+.split-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* --- Split Sides --- */
+.split-side {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  transition: flex 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+  flex: 1;
+}
+
+.side-texture {
+  position: absolute;
+  inset: 0;
+  background-size: 864px 1117px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.tofu-side .side-texture {
+  background-image: url('assets/texture-light.png');
+}
+
+.sool-side .side-texture {
+  background-image: url('assets/texture-dark.png');
+}
+
+/* --- Side Content --- */
+.side-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  padding-bottom: 120px;
+}
+
+/* --- Brand Logos --- */
+.brand-logo {
+  height: auto;
+  object-fit: contain;
+}
+
+.tofu-logo {
+  width: 250px;
+  margin-bottom: 60px;
+}
+
+.sool-logo {
+  width: 300px;
+  margin-bottom: -15px;
+  filter:
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.15))
+    drop-shadow(0 0 24px rgba(255, 255, 255, 0.08));
+  transition: filter 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* --- CTA Buttons --- */
+.cta-btn {
+  position: absolute;
+  bottom: calc(28% + 60px);
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cta-arrow {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-size: 15px;
+}
+
+/* TofuStory button */
+.tofu-btn {
+  background: rgba(60, 55, 48, 0.75);
+  color: rgba(245, 240, 232, 0.9);
+  border: 1px solid rgba(60, 55, 48, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.tofu-btn:hover {
+  background: rgba(60, 55, 48, 0.85);
+}
+
+/* SoolStory button */
+.sool-btn {
+  background: rgba(235, 228, 216, 0.85);
+  color: rgba(40, 38, 35, 0.9);
+  border: 1px solid rgba(235, 228, 216, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.sool-btn:hover {
+  background: rgba(235, 228, 216, 0.95);
+}
+
+/* --- Hover States --- */
+
+/* Hover TofuStory side */
+.split-container.hover-tofu .tofu-side {
+  flex: 1.08;
+}
+
+.split-container.hover-tofu .sool-side {
+  flex: 0.92;
+}
+
+.split-container.hover-tofu .tofu-btn .cta-arrow {
+  max-width: 30px;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+/* Hover SoolStory side */
+.split-container.hover-sool .sool-side {
+  flex: 1.08;
+}
+
+.split-container.hover-sool .tofu-side {
+  flex: 0.92;
+}
+
+.split-container.hover-sool .sool-btn .cta-arrow {
+  max-width: 30px;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+/* Enhanced glow on sool hover */
+.split-container.hover-sool .sool-logo {
+  filter:
+    drop-shadow(0 0 14px rgba(255, 255, 255, 0.3))
+    drop-shadow(0 0 40px rgba(255, 255, 255, 0.12));
+}
+
+/* ============================================
+   MOBILE — Tablet (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+  }
+
+  .split-side {
+    flex: 1;
+    transition: flex 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .side-content {
+    padding: 40px 24px;
+    padding-bottom: 100px;
+  }
+
+  .tofu-logo {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+
+  .sool-logo {
+    width: 240px;
+    margin-bottom: 0;
+  }
+
+  .floating-nav {
+    top: 16px;
+    padding: 5px 6px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 8px 16px;
+    white-space: nowrap;
+  }
+
+  .cta-btn {
+    font-size: 13px;
+    padding: 12px 24px;
+    bottom: 22%;
+  }
+
+  /* Disable hover expand on touch */
+  .split-container.hover-tofu .tofu-side,
+  .split-container.hover-sool .sool-side {
+    flex: 1;
+  }
+  .split-container.hover-tofu .sool-side,
+  .split-container.hover-sool .tofu-side {
+    flex: 1;
+  }
+}
+
+/* ============================================
+   MOBILE — Phone (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .tofu-logo {
+    width: 170px;
+    margin-bottom: 32px;
+  }
+
+  .sool-logo {
+    width: 200px;
+  }
+
+  .floating-nav {
+    top: 12px;
+    padding: 4px 5px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  .cta-btn {
+    font-size: 12px;
+    padding: 10px 20px;
+    bottom: 20%;
+  }
+
+  .cta-arrow {
+    font-size: 13px;
+  }
+}
