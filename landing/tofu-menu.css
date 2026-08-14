@@ -183,8 +183,8 @@ body {
 
 /* --- Hero Text --- */
 .hero-text {
-  margin-bottom: var(--gap-section);
-  padding-top: 140px;
+  margin-bottom: 200px;
+  padding-top: 200px;
 }
 
 .hero-layout {
@@ -203,7 +203,7 @@ body {
   flex: 0 0 auto;
   max-width: 400px;
   text-align: right;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
   color: #3a3a3a;
 }
@@ -214,7 +214,7 @@ body {
 
 .hero-korean {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: rgba(44, 44, 44, 0.45);
   letter-spacing: 0.4em;
@@ -223,7 +223,7 @@ body {
 
 .hero-heading {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
   color: #2c2c2c;
   line-height: 1.2;
@@ -236,7 +236,7 @@ body {
 
 .hero-sub {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   color: rgba(44, 44, 44, 0.55);
   line-height: 1.7;
@@ -757,7 +757,7 @@ body {
   /* --- Hero --- */
   .hero-text {
     padding-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
   }
 
   .hero-layout {
@@ -977,7 +977,7 @@ body {
   /* --- Hero --- */
   .hero-text {
     padding-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
   }
 
   .hero-heading {
