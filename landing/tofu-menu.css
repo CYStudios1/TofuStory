@@ -185,7 +185,11 @@ body {
   width: 240px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 24px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 16px;
 }
 
 /* --- Hero Text --- */
@@ -204,6 +208,7 @@ body {
 .hero-left {
   flex: 1;
   max-width: 400px;
+  position: relative;
 }
 
 .hero-right {
