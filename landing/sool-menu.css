@@ -507,8 +507,11 @@ body {
   }
 
   .menu-header {
-    display: none;
+    padding: 12px 16px;
   }
+
+  .header-logo--tofu img { width: 36px; }
+  .header-logo--sool img { width: 36px; }
 
   .nav-backdrop {
     height: 80px;
