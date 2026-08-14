@@ -203,14 +203,11 @@ body {
 }
 
 .hero-image {
-  width: 400px;
+  width: 500px;
   height: auto;
   object-fit: contain;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 16px;
+  margin: 0 auto 24px;
+  display: block;
 }
 
 .hero-right {
