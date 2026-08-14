@@ -264,14 +264,18 @@ body {
     bottom: 22%;
   }
 
-  /* Disable hover expand on touch */
-  .split-container.hover-tofu .tofu-side,
-  .split-container.hover-sool .sool-side {
-    flex: 1;
+  /* Tap expand on mobile */
+  .split-container.hover-tofu .tofu-side {
+    flex: 1.15;
   }
-  .split-container.hover-tofu .sool-side,
+  .split-container.hover-tofu .sool-side {
+    flex: 0.85;
+  }
+  .split-container.hover-sool .sool-side {
+    flex: 1.15;
+  }
   .split-container.hover-sool .tofu-side {
-    flex: 1;
+    flex: 0.85;
   }
 }
 

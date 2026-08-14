@@ -51,20 +51,43 @@
     const container = document.querySelector('.split-container');
     const tofuSide = document.getElementById('tofuSide');
     const soolSide = document.getElementById('soolSide');
+    const isMobile = 'ontouchstart' in window || window.innerWidth <= 768;
 
-    tofuSide.addEventListener('mouseenter', () => {
-      container.classList.add('hover-tofu');
-      container.classList.remove('hover-sool');
-    });
+    if (isMobile) {
+      // Mobile: tap to expand, tap again to navigate
+      tofuSide.addEventListener('click', () => {
+        if (container.classList.contains('hover-tofu')) {
+          window.location.href = 'tofu-menu.html';
+        } else {
+          container.classList.add('hover-tofu');
+          container.classList.remove('hover-sool');
+        }
+      });
 
-    soolSide.addEventListener('mouseenter', () => {
-      container.classList.add('hover-sool');
-      container.classList.remove('hover-tofu');
-    });
+      soolSide.addEventListener('click', () => {
+        if (container.classList.contains('hover-sool')) {
+          window.location.href = 'sool-menu.html';
+        } else {
+          container.classList.add('hover-sool');
+          container.classList.remove('hover-tofu');
+        }
+      });
+    } else {
+      // Desktop: hover behavior
+      tofuSide.addEventListener('mouseenter', () => {
+        container.classList.add('hover-tofu');
+        container.classList.remove('hover-sool');
+      });
 
-    container.addEventListener('mouseleave', () => {
-      container.classList.remove('hover-tofu', 'hover-sool');
-    });
+      soolSide.addEventListener('mouseenter', () => {
+        container.classList.add('hover-sool');
+        container.classList.remove('hover-tofu');
+      });
+
+      container.addEventListener('mouseleave', () => {
+        container.classList.remove('hover-tofu', 'hover-sool');
+      });
+    }
   </script>
 
 </body>
