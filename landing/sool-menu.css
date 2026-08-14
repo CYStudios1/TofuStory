@@ -548,8 +548,8 @@ body {
   }
 
   .hero-text {
-    padding-top: 150px;
-    margin-bottom: 250px;
+    padding-top: 200px;
+    margin-bottom: 200px;
   }
 
   .hero-layout {
@@ -564,7 +564,8 @@ body {
   }
 
   .hero-right {
-    display: none;
+    text-align: center;
+    max-width: 100%;
   }
 
   .hero-heading {
@@ -663,8 +664,8 @@ body {
   }
 
   .hero-text {
-    padding-top: 150px;
-    margin-bottom: 250px;
+    padding-top: 200px;
+    margin-bottom: 200px;
   }
 
   .hero-heading {
