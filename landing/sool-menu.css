@@ -564,8 +564,7 @@ body {
   }
 
   .hero-right {
-    text-align: center;
-    max-width: 100%;
+    display: none;
   }
 
   .hero-heading {
