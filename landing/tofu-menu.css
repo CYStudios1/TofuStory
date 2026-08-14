@@ -770,8 +770,7 @@ body {
   }
 
   .hero-right {
-    text-align: center;
-    max-width: 100%;
+    display: none;
   }
 
   .hero-heading {
@@ -995,7 +994,7 @@ body {
 
   /* --- Sections --- */
   .menu-section {
-    padding: 32px 0;
+    padding: 50px 0;
   }
 
   .menu-section:nth-child(odd) {
