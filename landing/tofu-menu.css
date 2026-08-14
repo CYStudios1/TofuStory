@@ -47,6 +47,8 @@ body {
   align-items: flex-start;
   padding: 24px 100px;
   pointer-events: none;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .header-logo img {
