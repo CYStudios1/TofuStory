@@ -248,13 +248,13 @@ body {
   }
 
   .floating-nav {
-    top: 16px;
-    padding: 5px 6px;
+    top: 14px;
+    padding: 4px 6px;
   }
 
   .nav-link {
-    font-size: 13px;
-    padding: 8px 16px;
+    font-size: 12px;
+    padding: 7px 14px;
     white-space: nowrap;
   }
 
@@ -293,13 +293,13 @@ body {
   }
 
   .floating-nav {
-    top: 12px;
+    top: 10px;
     padding: 4px 5px;
   }
 
   .nav-link {
-    font-size: 12px;
-    padding: 7px 12px;
+    font-size: 11px;
+    padding: 6px 10px;
   }
 
   .cta-btn {
