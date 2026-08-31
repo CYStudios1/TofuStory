@@ -230,10 +230,8 @@ body {
 
   .split-side {
     flex: 1;
-    transition: flex 0.85s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: flex 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
     will-change: flex;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
   }
 
   .side-content {
@@ -268,18 +266,18 @@ body {
     bottom: 22%;
   }
 
-  /* Tap expand on mobile — subtler ratio for smoother feel */
+  /* Tap expand on mobile */
   .split-container.hover-tofu .tofu-side {
-    flex: 1.08;
+    flex: 1.15;
   }
   .split-container.hover-tofu .sool-side {
-    flex: 0.92;
+    flex: 0.85;
   }
   .split-container.hover-sool .sool-side {
-    flex: 1.08;
+    flex: 1.15;
   }
   .split-container.hover-sool .tofu-side {
-    flex: 0.92;
+    flex: 0.85;
   }
 }
 
