@@ -482,6 +482,33 @@ body {
   border: 1px solid rgba(187, 54, 53, 0.35);
 }
 
+/* --- Item Options (protein choices) --- */
+.item-options {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1.5px solid rgba(44, 44, 44, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  max-width: 220px;
+}
+
+.item-option {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(44, 44, 44, 0.55);
+  letter-spacing: 0.01em;
+}
+
+.item-option-divider {
+  font-size: 0.7rem;
+  color: rgba(44, 44, 44, 0.25);
+  margin: 0 0.3rem;
+}
+
 /* --- Divider (dashed line for add-ons) --- */
 .item-divider {
   width: 160px;
