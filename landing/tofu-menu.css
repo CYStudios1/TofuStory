@@ -517,6 +517,12 @@ body {
   background: rgba(44, 44, 44, 0.15);
 }
 
+/* --- Drinks section: match Sool Menu content width --- */
+#drinks.menu-section:nth-child(odd) {
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
 /* --- Drink bottle sizing --- */
 #drinks .item-image {
   width: 80px;
@@ -885,6 +891,11 @@ body {
     padding-right: calc(50vw - 50% + 20px);
   }
 
+  #drinks.menu-section:nth-child(odd) {
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+  }
+
   .section-heading span {
     font-size: 24px;
     letter-spacing: 0.15em;
@@ -1090,6 +1101,11 @@ body {
   .menu-section:nth-child(odd) {
     padding-left: calc(50vw - 50% + 16px);
     padding-right: calc(50vw - 50% + 16px);
+  }
+
+  #drinks.menu-section:nth-child(odd) {
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
   }
 
   .section-heading span {
