@@ -482,6 +482,41 @@ body {
   border: 1px solid rgba(187, 54, 53, 0.35);
 }
 
+/* --- Drinks Split Layout (Soju + Makgeolli) --- */
+.drinks-split {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.drinks-group {
+  flex: 1;
+}
+
+.drinks-group--left .menu-row {
+  justify-content: flex-start;
+}
+
+.drinks-group--right .menu-row {
+  justify-content: flex-end;
+}
+
+.group-heading--right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.group-heading--right::after {
+  display: none;
+}
+
+.group-heading--right::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(44, 44, 44, 0.15);
+}
+
 /* --- Drink bottle sizing --- */
 #drinks .item-image {
   width: 80px;
