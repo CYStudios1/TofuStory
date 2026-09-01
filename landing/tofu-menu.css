@@ -482,6 +482,13 @@ body {
   border: 1px solid rgba(187, 54, 53, 0.35);
 }
 
+/* --- Drink bottle sizing --- */
+#drinks .item-image {
+  width: 80px;
+  height: 160px;
+  aspect-ratio: auto;
+}
+
 /* --- Item Options (protein choices) --- */
 .item-options {
   margin-top: 0.5rem;
