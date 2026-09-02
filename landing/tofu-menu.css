@@ -561,6 +561,21 @@ body {
   color: #2c2c2c;
 }
 
+/* --- Shots Section (House Shots + Special) --- */
+.shots-section {
+  margin-top: var(--gap-block);
+}
+
+.shots-columns {
+  display: flex;
+  gap: 60px;
+}
+
+.shots-col {
+  flex: 1;
+  max-width: 400px;
+}
+
 /* --- Soft Drinks Section --- */
 .soft-drinks-section {
   margin-top: var(--gap-block);
@@ -968,6 +983,11 @@ body {
 
   .shot-name {
     font-size: 0.88rem;
+  }
+
+  .shots-columns {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .soft-drinks-section {
