@@ -530,6 +530,34 @@ body {
   aspect-ratio: auto;
 }
 
+/* --- House Shots --- */
+.house-shots-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.house-shots-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.08);
+}
+
+.shot-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #2c2c2c;
+}
+
+.shot-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
 /* --- Item Options (protein choices) --- */
 .item-options {
   margin-top: 0.5rem;
