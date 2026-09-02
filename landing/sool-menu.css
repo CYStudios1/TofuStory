@@ -714,7 +714,9 @@ body {
   }
 
   .hero-right {
-    display: none;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 1rem;
   }
 
   .hero-heading {
