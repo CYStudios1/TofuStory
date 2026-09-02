@@ -390,8 +390,8 @@ body {
 .item-desc {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 0.83rem;
-  font-weight: 300;
-  color: rgba(245, 237, 224, 0.45);
+  font-weight: 400;
+  color: rgba(245, 237, 224, 0.7);
   text-align: center;
   line-height: 1.55;
   margin: 0 0 0.7rem;

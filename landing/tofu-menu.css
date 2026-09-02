@@ -431,8 +431,8 @@ body {
 .item-name-kr {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 0.78rem;
-  font-weight: 300;
-  color: rgba(44, 44, 44, 0.4);
+  font-weight: 400;
+  color: rgba(44, 44, 44, 0.6);
   text-align: center;
   margin: 0 0 0.5rem;
 }
@@ -441,8 +441,8 @@ body {
 .item-desc {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 0.83rem;
-  font-weight: 300;
-  color: rgba(44, 44, 44, 0.55);
+  font-weight: 400;
+  color: rgba(44, 44, 44, 0.75);
   text-align: center;
   line-height: 1.55;
   margin: 0 0 0.7rem;
