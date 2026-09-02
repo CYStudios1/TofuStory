@@ -482,7 +482,7 @@ body {
   border: 1px solid rgba(187, 54, 53, 0.35);
 }
 
-/* --- Drinks Split Layout (Soju + Makgeolli) --- */
+/* --- Drinks Split Layout (Soju + Beer) --- */
 .drinks-split {
   display: flex;
   gap: 60px;
