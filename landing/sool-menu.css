@@ -485,7 +485,8 @@ body {
 }
 
 /* --- Bottle image size --- */
-#drinks .item-image {
+#drinks .item-image,
+#beverages .item-image {
   width: 80px;
   height: 160px;
   aspect-ratio: auto;
