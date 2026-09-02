@@ -466,9 +466,8 @@ body {
   background: rgba(245, 237, 224, 0.12);
 }
 
-/* --- Drinks & Night Food: alternating background --- */
-#drinks.menu-section,
-#night-food.menu-section {
+/* --- Drinks: alternating background --- */
+#drinks.menu-section {
   background: rgba(255, 255, 255, 0.04);
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -715,8 +714,7 @@ body {
     padding-right: calc(50vw - 50% + 20px);
   }
 
-  #drinks.menu-section,
-  #night-food.menu-section {
+  #drinks.menu-section {
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
   }
@@ -869,8 +867,7 @@ body {
     padding-right: calc(50vw - 50% + 16px);
   }
 
-  #drinks.menu-section,
-  #night-food.menu-section {
+  #drinks.menu-section {
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
   }
