@@ -545,12 +545,14 @@ body {
 
 /* --- Soda group image: larger but text stays aligned --- */
 .soda-group-image {
-  overflow: visible !important;
+  width: 120px !important;
+  height: 160px !important;
 }
 
 .soda-group-image img {
-  transform: scale(1.5);
-  transform-origin: center bottom;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* --- Shots Section (House Shots + Special) --- */
@@ -575,6 +577,7 @@ body {
 
 .soft-drinks-section .menu-row {
   justify-content: center;
+  align-items: flex-end;
 }
 
 /* --- Footer --- */
