@@ -466,22 +466,22 @@ body {
   background: rgba(245, 237, 224, 0.12);
 }
 
-/* --- Drinks: alternating background --- */
+/* --- Drinks: full-bleed with wider content --- */
 #drinks.menu-section {
-  background: rgba(255, 255, 255, 0.04);
+  background: none;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   padding-left: calc(50vw - 50%);
   padding-right: calc(50vw - 50%);
 }
 
-/* --- Night Food: remove odd-child background to alternate with Drinks --- */
+/* --- Night Food: alternating background --- */
 #night-food.menu-section {
-  background: none;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
+  background: rgba(255, 255, 255, 0.04);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50% + 100px);
+  padding-right: calc(50vw - 50% + 100px);
 }
 
 /* --- Bottle image size --- */
