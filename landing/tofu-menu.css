@@ -562,6 +562,16 @@ body {
   color: #2c2c2c;
 }
 
+/* --- Soda group image: larger but text stays aligned --- */
+.soda-group-image {
+  overflow: visible !important;
+}
+
+.soda-group-image img {
+  transform: scale(1.5);
+  transform-origin: center bottom;
+}
+
 /* --- Shots Section (House Shots + Special) --- */
 .shots-section {
   margin-top: var(--gap-block);
