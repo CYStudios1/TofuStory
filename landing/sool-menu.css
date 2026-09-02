@@ -543,6 +543,12 @@ body {
   color: rgba(245, 237, 224, 0.4);
 }
 
+/* --- Beer group image: wider to fit grouped bottles --- */
+.beer-group-image {
+  width: 120px !important;
+  height: 160px !important;
+}
+
 /* --- Soda group image: larger but text stays aligned --- */
 .soda-group-image {
   width: 120px !important;
@@ -816,7 +822,7 @@ body {
   }
 
   .menu-row {
-    gap: 2rem 1.1rem;
+    gap: 2.5rem 1.1rem;
     justify-content: center;
   }
 
@@ -944,7 +950,7 @@ body {
   }
 
   .menu-row {
-    gap: 1.8rem 0.8rem;
+    gap: 2.5rem 1rem;
   }
 
   .menu-item {
@@ -953,7 +959,7 @@ body {
   }
 
   .item-image {
-    width: 120px;
+    width: 110px;
   }
 
   .item-name {

@@ -562,6 +562,12 @@ body {
   color: #2c2c2c;
 }
 
+/* --- Beer group image: wider to fit grouped bottles --- */
+.beer-group-image {
+  width: 120px !important;
+  height: 160px !important;
+}
+
 /* --- Soda group image: larger but text stays aligned --- */
 .soda-group-image {
   width: 120px !important;
