@@ -475,6 +475,15 @@ body {
   padding-right: calc(50vw - 50%);
 }
 
+/* --- Night Food: remove odd-child background to alternate with Drinks --- */
+#night-food.menu-section {
+  background: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* --- Bottle image size --- */
 #drinks .item-image {
   width: 80px;
