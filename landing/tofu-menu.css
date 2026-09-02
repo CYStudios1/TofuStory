@@ -558,6 +558,15 @@ body {
   color: #2c2c2c;
 }
 
+/* --- Soft Drinks Section --- */
+.soft-drinks-section {
+  margin-top: var(--gap-block);
+}
+
+.soft-drinks-section .menu-row {
+  justify-content: center;
+}
+
 /* --- Item Options (protein choices) --- */
 .item-options {
   margin-top: 0.5rem;
@@ -924,6 +933,43 @@ body {
     padding-right: calc(50vw - 50%);
   }
 
+  .drinks-split {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .drinks-group--right .menu-row {
+    justify-content: flex-start;
+  }
+
+  .group-heading--right {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .group-heading--right::before {
+    display: none;
+  }
+
+  .group-heading--right::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(44, 44, 44, 0.15);
+  }
+
+  .house-shots-list li {
+    padding: 0.35rem 0;
+  }
+
+  .shot-name {
+    font-size: 0.88rem;
+  }
+
+  .soft-drinks-section {
+    margin-top: 2rem;
+  }
+
   .section-heading span {
     font-size: 24px;
     letter-spacing: 0.15em;
@@ -1134,6 +1180,23 @@ body {
   #drinks.menu-section:nth-child(odd) {
     padding-left: calc(50vw - 50%);
     padding-right: calc(50vw - 50%);
+  }
+
+  #drinks .item-image {
+    width: 60px;
+    height: 120px;
+  }
+
+  .house-shots-list li {
+    padding: 0.3rem 0;
+  }
+
+  .shot-name {
+    font-size: 0.82rem;
+  }
+
+  .shot-price {
+    font-size: 0.92rem;
   }
 
   .section-heading span {

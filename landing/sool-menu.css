@@ -466,11 +466,82 @@ body {
   background: rgba(245, 237, 224, 0.12);
 }
 
+/* --- Drinks section: wider content for 3 bottles per row --- */
+#drinks.menu-section:nth-child(odd) {
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+#drinks.menu-section:nth-child(even) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* --- Bottle image size --- */
-.drinks-group .item-image {
+#drinks .item-image {
   width: 80px;
   height: 160px;
   aspect-ratio: auto;
+}
+
+/* --- House Shots --- */
+.house-shots-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.house-shots-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(245, 237, 224, 0.08);
+}
+
+.shot-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #F5EDE0;
+}
+
+.shot-price {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #F5EDE0;
+}
+
+/* --- Item Options --- */
+.item-options {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(245, 237, 224, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.item-option {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: rgba(245, 237, 224, 0.45);
+}
+
+.item-option-divider {
+  font-size: 0.78rem;
+  color: rgba(245, 237, 224, 0.2);
+}
+
+/* --- Soft Drinks Section --- */
+.soft-drinks-section {
+  margin-top: 3rem;
+}
+
+.soft-drinks-section .menu-row {
+  justify-content: center;
 }
 
 /* --- Footer --- */
@@ -645,6 +716,57 @@ body {
     padding-right: calc(50vw - 50% + 20px);
   }
 
+  #drinks.menu-section:nth-child(odd),
+  #drinks.menu-section:nth-child(even) {
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+  }
+
+  .drinks-split {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .drinks-group--right .menu-row {
+    justify-content: flex-start;
+  }
+
+  .group-heading--right {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .group-heading--right::before {
+    display: none;
+  }
+
+  .group-heading--right::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(245, 237, 224, 0.12);
+  }
+
+  .house-shots-list li {
+    padding: 0.35rem 0;
+  }
+
+  .shot-name {
+    font-size: 0.88rem;
+  }
+
+  .soft-drinks-section {
+    margin-top: 2rem;
+  }
+
+  .item-options {
+    gap: 0.1rem;
+  }
+
+  .item-option {
+    font-size: 0.72rem;
+  }
+
   .section-heading span {
     font-size: 24px;
     letter-spacing: 0.15em;
@@ -745,6 +867,33 @@ body {
   .menu-section:nth-child(odd) {
     padding-left: calc(50vw - 50% + 16px);
     padding-right: calc(50vw - 50% + 16px);
+  }
+
+  #drinks.menu-section:nth-child(odd),
+  #drinks.menu-section:nth-child(even) {
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+  }
+
+  #drinks .item-image {
+    width: 60px;
+    height: 120px;
+  }
+
+  .house-shots-list li {
+    padding: 0.3rem 0;
+  }
+
+  .shot-name {
+    font-size: 0.82rem;
+  }
+
+  .shot-price {
+    font-size: 0.92rem;
+  }
+
+  .item-option {
+    font-size: 0.68rem;
   }
 
   .section-heading span {
