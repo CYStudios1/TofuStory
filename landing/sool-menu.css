@@ -741,6 +741,7 @@ body {
   }
 
   .group-heading--right::after {
+    display: block;
     content: '';
     flex: 1;
     height: 1px;
