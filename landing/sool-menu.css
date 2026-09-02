@@ -532,14 +532,14 @@ body {
 
 .item-option {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 300;
-  color: rgba(245, 237, 224, 0.45);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: rgba(245, 237, 224, 0.7);
 }
 
 .item-option-divider {
-  font-size: 0.78rem;
-  color: rgba(245, 237, 224, 0.2);
+  font-size: 0.82rem;
+  color: rgba(245, 237, 224, 0.4);
 }
 
 /* --- Soft Drinks Section --- */

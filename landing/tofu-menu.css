@@ -585,15 +585,15 @@ body {
 
 .item-option {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   font-weight: 400;
-  color: rgba(44, 44, 44, 0.55);
+  color: rgba(44, 44, 44, 0.75);
   letter-spacing: 0.01em;
 }
 
 .item-option-divider {
-  font-size: 0.7rem;
-  color: rgba(44, 44, 44, 0.25);
+  font-size: 0.78rem;
+  color: rgba(44, 44, 44, 0.4);
   margin: 0 0.3rem;
 }
 
