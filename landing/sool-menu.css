@@ -360,9 +360,14 @@ body {
   text-align: center;
   flex: 0 0 auto;
   width: 160px;
-  border: 1px solid rgba(245, 237, 224, 0.15);
+}
+
+/* --- Cocktail cards only --- */
+#soju-cocktails .menu-item {
+  border: 1px solid rgba(245, 237, 224, 0.12);
   border-radius: 8px;
   padding: 1rem 0.8rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25), 0 0 20px rgba(212, 148, 76, 0.06);
 }
 
 /* --- Item Image --- */
