@@ -187,8 +187,9 @@ body {
 
 /* --- Hero Text --- */
 .hero-text {
-  margin-bottom: 100px;
-  padding-top: 200px;
+  margin-bottom: 200px;
+  padding-top: 250px;
+  position: relative;
 }
 
 .hero-layout {
@@ -201,18 +202,17 @@ body {
 .hero-left {
   flex: 1;
   max-width: 400px;
-  position: relative;
 }
 
 .hero-image {
   width: 500px;
   height: auto;
   object-fit: contain;
-  margin: 0 auto 24px;
-  display: block;
-  position: relative;
+  position: absolute;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
+  margin-bottom: 16px;
 }
 
 .hero-right {
