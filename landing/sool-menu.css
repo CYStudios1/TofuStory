@@ -304,6 +304,18 @@ body {
   margin-top: 10px;
 }
 
+/* --- Section tagline --- */
+.section-tagline {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  color: rgba(245, 237, 224, 0.4);
+  margin-top: 12px;
+  margin-bottom: var(--gap-block);
+}
+
 /* --- Group Headings (sub-sections) --- */
 .group-heading {
   font-family: 'Cinzel', serif;
