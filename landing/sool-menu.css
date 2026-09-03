@@ -808,6 +808,11 @@ body {
     margin-top: 2rem;
   }
 
+  #night-food.menu-section {
+    padding-left: calc(50vw - 50% + 20px);
+    padding-right: calc(50vw - 50% + 20px);
+  }
+
   .item-options {
     gap: 0.1rem;
   }
@@ -914,6 +919,11 @@ body {
   }
 
   .menu-section:nth-child(odd) {
+    padding-left: calc(50vw - 50% + 16px);
+    padding-right: calc(50vw - 50% + 16px);
+  }
+
+  #night-food.menu-section {
     padding-left: calc(50vw - 50% + 16px);
     padding-right: calc(50vw - 50% + 16px);
   }
