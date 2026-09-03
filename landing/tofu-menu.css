@@ -1076,8 +1076,12 @@ body {
   }
 
   .item-desc {
-    font-size: 14px;
+    font-size: 12px;
     max-width: 100%;
+  }
+
+  .item-option {
+    font-size: 0.78rem;
   }
 
   .item-price {
@@ -1302,8 +1306,12 @@ body {
   }
 
   .item-desc {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.45;
+  }
+
+  .item-option {
+    font-size: 0.74rem;
   }
 
   .item-price {
