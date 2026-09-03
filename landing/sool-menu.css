@@ -270,9 +270,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   display: inline-block;
-  text-decoration: underline;
-  text-decoration-thickness: 2.5px;
-  text-underline-offset: 4px;
+}
+
+.section-heading::after {
+  content: '── ◆ ──';
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: rgba(212, 148, 76, 0.45);
+  margin-top: 10px;
 }
 
 /* --- Group Headings (sub-sections) --- */
@@ -353,6 +360,9 @@ body {
   text-align: center;
   flex: 0 0 auto;
   width: 160px;
+  border: 1px solid rgba(245, 237, 224, 0.15);
+  border-radius: 8px;
+  padding: 1rem 0.8rem;
 }
 
 /* --- Item Image --- */
