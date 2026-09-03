@@ -770,8 +770,9 @@ body {
     gap: 2rem;
   }
 
+  .drinks-group--left .menu-row,
   .drinks-group--right .menu-row {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .group-heading--right {
