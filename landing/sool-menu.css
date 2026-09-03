@@ -730,7 +730,8 @@ body {
 
   .hero-text {
     padding-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 350px;
+    position: relative;
   }
 
   .hero-layout {
@@ -745,7 +746,11 @@ body {
   }
 
   .hero-image {
-    width: 250px;
+    width: 140px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .hero-right {
@@ -913,7 +918,7 @@ body {
 
   .hero-text {
     padding-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 350px;
   }
 
   .hero-heading {
