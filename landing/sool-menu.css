@@ -262,21 +262,20 @@ body {
 /* --- Pre-heading (SOOL 술 STORY) --- */
 .section-pre-heading {
   text-align: center;
-  font-family: 'Cinzel', serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.3em;
-  color: rgba(245, 237, 224, 0.45);
-  margin-bottom: 8px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: rgba(245, 237, 224, 0.5);
+  margin-bottom: 6px;
 }
 
 .pre-heading-kr {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: rgba(245, 237, 224, 0.5);
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 36px;
+  color: rgba(245, 237, 224, 0.55);
   vertical-align: middle;
-  margin: 0 4px;
+  margin: 0 6px;
 }
 
 /* --- Section Headings --- */
