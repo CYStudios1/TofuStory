@@ -266,14 +266,14 @@ body {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.35em;
-  color: rgba(245, 237, 224, 0.5);
+  color: rgba(245, 237, 224, 0.75);
   margin-bottom: 6px;
 }
 
 .pre-heading-kr {
   font-family: 'Nanum Brush Script', cursive;
   font-size: 36px;
-  color: rgba(245, 237, 224, 0.55);
+  color: rgba(245, 237, 224, 0.8);
   vertical-align: middle;
   margin: 0 6px;
 }
@@ -311,7 +311,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.25em;
-  color: rgba(245, 237, 224, 0.4);
+  color: rgba(245, 237, 224, 0.65);
   margin-top: 12px;
   margin-bottom: var(--gap-block);
 }
@@ -875,6 +875,19 @@ body {
     font-size: 0.78rem;
   }
 
+  .section-pre-heading {
+    font-size: 12px;
+  }
+
+  .pre-heading-kr {
+    font-size: 28px;
+  }
+
+  .section-tagline {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+
   .section-heading span {
     font-size: 24px;
     letter-spacing: 0.15em;
@@ -1006,6 +1019,19 @@ body {
 
   .item-option {
     font-size: 0.74rem;
+  }
+
+  .section-pre-heading {
+    font-size: 11px;
+  }
+
+  .pre-heading-kr {
+    font-size: 24px;
+  }
+
+  .section-tagline {
+    font-size: 10px;
+    letter-spacing: 0.15em;
   }
 
   .section-heading span {
