@@ -1084,24 +1084,6 @@ body {
     font-size: 0.78rem;
   }
 
-  #beverages .menu-item {
-    width: calc(33.33% - 12px);
-    max-width: none;
-  }
-
-  #beverages .item-image {
-    width: 60px;
-    height: 120px;
-  }
-
-  #beverages .item-name {
-    font-size: 13px;
-  }
-
-  #beverages .item-price {
-    font-size: 13px;
-  }
-
   .item-price {
     font-size: 16px;
   }
@@ -1330,23 +1312,6 @@ body {
 
   .item-option {
     font-size: 0.74rem;
-  }
-
-  #beverages .menu-item {
-    width: calc(33.33% - 8px);
-  }
-
-  #beverages .item-image {
-    width: 50px;
-    height: 100px;
-  }
-
-  #beverages .item-name {
-    font-size: 11px;
-  }
-
-  #beverages .item-price {
-    font-size: 11px;
   }
 
   .item-price {
