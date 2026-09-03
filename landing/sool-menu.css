@@ -259,6 +259,26 @@ body {
   line-height: 1.7;
 }
 
+/* --- Pre-heading (SOOL 술 STORY) --- */
+.section-pre-heading {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: rgba(245, 237, 224, 0.45);
+  margin-bottom: 8px;
+}
+
+.pre-heading-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(245, 237, 224, 0.5);
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
 /* --- Section Headings --- */
 .section-heading {
   text-align: center;
