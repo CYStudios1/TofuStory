@@ -210,6 +210,9 @@ body {
   object-fit: contain;
   margin: 0 auto 24px;
   display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero-right {
