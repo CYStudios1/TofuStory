@@ -270,10 +270,9 @@ body {
   margin-bottom: 6px;
 }
 
-.pre-heading-kr {
-  font-family: 'Nanum Brush Script', cursive;
-  font-size: 36px;
-  color: rgba(245, 237, 224, 0.8);
+.pre-heading-kr-img {
+  height: 40px;
+  width: auto;
   vertical-align: middle;
   margin: 0 6px;
 }
