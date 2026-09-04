@@ -187,7 +187,7 @@ body {
 
 /* --- Hero Text --- */
 .hero-text {
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   padding-top: 250px;
 }
 
@@ -271,7 +271,7 @@ body {
 }
 
 .pre-heading-kr-img {
-  height: 65px;
+  height: 80px;
   width: auto;
   vertical-align: middle;
   margin: 0 8px;
