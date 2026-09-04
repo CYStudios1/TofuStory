@@ -275,6 +275,8 @@ body {
   width: auto;
   vertical-align: middle;
   margin: 0 8px;
+  position: relative;
+  top: 5px;
 }
 
 /* --- Section Headings --- */
