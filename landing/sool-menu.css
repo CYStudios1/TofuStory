@@ -852,9 +852,14 @@ body {
   }
 
   .hero-text {
-    height: 60vh;
+    height: 50vh;
     align-items: flex-end;
     padding-bottom: 40px;
+  }
+
+  .landing-section::before {
+    background-position: 70% center;
+    height: calc(50vh + 140px);
   }
 
   .hero-title {
@@ -1033,8 +1038,13 @@ body {
   }
 
   .hero-text {
-    height: 55vh;
-    padding-bottom: 30px;
+    height: 45vh;
+    padding-bottom: 24px;
+  }
+
+  .landing-section::before {
+    background-position: 65% center;
+    height: calc(45vh + 110px);
   }
 
   .hero-title {
