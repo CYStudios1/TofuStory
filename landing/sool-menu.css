@@ -861,7 +861,8 @@ body {
     background-image: url('assets/sool-hero-bg-mobile.png');
     background-position: 85% 60%;
     background-size: 140%;
-    height: 100vh;
+    top: -120px;
+    height: calc(100vh + 120px);
   }
 
   .hero-title {
@@ -1049,7 +1050,8 @@ body {
     background-image: url('assets/sool-hero-bg-mobile.png');
     background-position: 85% 60%;
     background-size: 140%;
-    height: 100vh;
+    top: -110px;
+    height: calc(100vh + 110px);
   }
 
   .hero-title {
