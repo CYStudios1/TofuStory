@@ -852,15 +852,16 @@ body {
   }
 
   .hero-text {
-    height: 60vh;
+    height: calc(100vh - 140px);
     align-items: flex-end;
     padding-bottom: 40px;
   }
 
   .landing-section::before {
     background-image: url('assets/sool-hero-bg-mobile.png');
-    background-position: right bottom;
-    height: calc(60vh + 140px);
+    background-position: 75% bottom;
+    background-size: cover;
+    height: 100vh;
   }
 
   .hero-title {
@@ -1039,14 +1040,15 @@ body {
   }
 
   .hero-text {
-    height: 55vh;
+    height: calc(100vh - 110px);
     padding-bottom: 24px;
   }
 
   .landing-section::before {
     background-image: url('assets/sool-hero-bg-mobile.png');
-    background-position: right bottom;
-    height: calc(55vh + 110px);
+    background-position: 75% bottom;
+    background-size: cover;
+    height: 100vh;
   }
 
   .hero-title {
