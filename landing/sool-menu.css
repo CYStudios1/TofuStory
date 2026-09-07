@@ -185,10 +185,75 @@ body {
   padding: 140px 100px 100px;
 }
 
-/* --- Hero Text --- */
+/* --- Hero --- */
 .hero-text {
-  margin-bottom: 200px;
-  padding-top: 250px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  max-width: 500px;
+}
+
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #D4944C;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(245, 237, 224, 0.6);
+  letter-spacing: 0.35em;
+  margin-bottom: 20px;
+}
+
+.hero-divider {
+  width: 220px;
+  height: 1px;
+  background: linear-gradient(to right, rgba(212, 148, 76, 0.6), rgba(212, 148, 76, 0.1));
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.hero-diamond {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8px;
+  color: #D4944C;
+}
+
+.hero-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(245, 237, 224, 0.8);
+  letter-spacing: 0.25em;
+  margin-bottom: 20px;
+}
+
+.hero-line {
+  width: 80px;
+  height: 1px;
+  background: rgba(212, 148, 76, 0.4);
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(245, 237, 224, 0.7);
+  line-height: 1.8;
 }
 
 .hero-layout {
@@ -377,6 +442,23 @@ body {
 
 .landing-section {
   margin-bottom: 0;
+  position: relative;
+}
+
+.landing-section::before {
+  content: '';
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100vh + 140px);
+  background-image: url('assets/sool-hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
 }
 
 /* --- Menu Rows --- */
@@ -770,45 +852,26 @@ body {
   }
 
   .hero-text {
-    padding-top: 200px;
-    margin-bottom: 80px;
+    height: 60vh;
+    align-items: flex-end;
+    padding-bottom: 40px;
   }
 
-  .hero-layout {
-    flex-direction: column;
-    text-align: center;
-    gap: 32px;
+  .hero-title {
+    font-size: 42px;
   }
 
-  .hero-left {
-    max-width: 100%;
-    text-align: center;
+  .hero-subtitle {
+    font-size: 16px;
+    letter-spacing: 0.25em;
   }
 
-  .hero-image {
-    width: 140px;
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+  .hero-divider {
+    width: 160px;
   }
 
-  .hero-right {
-    text-align: center;
+  .hero-desc {
     font-size: 13px;
-    margin-top: 1rem;
-  }
-
-  .hero-heading {
-    font-size: 22px;
-  }
-
-  .hero-korean {
-    font-size: 12px;
-  }
-
-  .hero-sub {
-    font-size: 14px;
   }
 
   .menu-section {
@@ -970,22 +1033,26 @@ body {
   }
 
   .hero-text {
-    padding-top: 200px;
-    margin-bottom: 80px;
+    height: 55vh;
+    padding-bottom: 30px;
   }
 
-  .hero-heading {
-    font-size: 20px;
-    margin-bottom: 12px;
+  .hero-title {
+    font-size: 34px;
   }
 
-  .hero-korean {
-    font-size: 11px;
-    margin-bottom: 10px;
-  }
-
-  .hero-sub {
+  .hero-subtitle {
     font-size: 13px;
+    letter-spacing: 0.2em;
+  }
+
+  .hero-divider {
+    width: 120px;
+    margin-bottom: 16px;
+  }
+
+  .hero-desc {
+    font-size: 12px;
   }
 
   .menu-section {
