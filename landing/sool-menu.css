@@ -854,13 +854,13 @@ body {
   .hero-text {
     height: calc(100vh - 140px);
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .landing-section::before {
     background-image: url('assets/sool-hero-bg-mobile.png');
-    background-position: 85% 60%;
-    background-size: 140%;
+    background-position: center 70%;
+    background-size: cover;
     top: -120px;
     height: calc(100vh + 120px);
   }
@@ -1043,13 +1043,13 @@ body {
   .hero-text {
     height: calc(100vh - 110px);
     align-items: flex-start;
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
   .landing-section::before {
     background-image: url('assets/sool-hero-bg-mobile.png');
-    background-position: 85% 60%;
-    background-size: 140%;
+    background-position: center 70%;
+    background-size: cover;
     top: -110px;
     height: calc(100vh + 110px);
   }
