@@ -206,6 +206,12 @@ body {
   margin-bottom: 12px;
 }
 
+.hero-title-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  margin: 0 8px;
+}
+
 .hero-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 22px;
