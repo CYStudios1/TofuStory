@@ -854,7 +854,7 @@ body {
   .hero-text {
     height: calc(100vh - 140px);
     align-items: flex-start;
-    padding-top: 30%;
+    padding-top: 45%;
   }
 
   .landing-section::before {
@@ -880,6 +880,7 @@ body {
 
   .hero-desc {
     font-size: 13px;
+    max-width: 60vw;
   }
 
   .menu-section {
@@ -1043,7 +1044,7 @@ body {
   .hero-text {
     height: calc(100vh - 110px);
     align-items: flex-start;
-    padding-top: 27%;
+    padding-top: 42%;
   }
 
   .landing-section::before {
@@ -1070,6 +1071,7 @@ body {
 
   .hero-desc {
     font-size: 12px;
+    max-width: 60vw;
   }
 
   .menu-section {
