@@ -214,6 +214,7 @@ body {
   margin: 0 8px;
   position: relative;
   top: 2px;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(45%) saturate(600%) hue-rotate(350deg) brightness(95%);
 }
 
 .hero-subtitle {
