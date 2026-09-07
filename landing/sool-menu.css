@@ -854,7 +854,7 @@ body {
   .hero-text {
     height: calc(100vh - 140px);
     align-items: flex-start;
-    padding-top: 45%;
+    padding-top: 50%;
   }
 
   .landing-section::before {
@@ -1044,7 +1044,7 @@ body {
   .hero-text {
     height: calc(100vh - 110px);
     align-items: flex-start;
-    padding-top: 42%;
+    padding-top: 47%;
   }
 
   .landing-section::before {
