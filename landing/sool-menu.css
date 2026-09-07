@@ -334,6 +334,28 @@ body {
   line-height: 1.7;
 }
 
+/* --- Hero Hours --- */
+.hero-hours {
+  margin-top: 28px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(245, 237, 224, 0.6);
+  line-height: 1.8;
+}
+
+.hero-hours-title {
+  font-weight: 500;
+  color: rgba(245, 237, 224, 0.8);
+  margin-bottom: 4px;
+}
+
+.hero-hours-note {
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(245, 237, 224, 0.4);
+}
+
 /* --- Pre-heading (SOOL 술 STORY) --- */
 .section-pre-heading {
   text-align: center;
@@ -897,6 +919,15 @@ body {
     max-width: 70vw;
   }
 
+  .hero-hours {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .hero-hours-note {
+    font-size: 10px;
+  }
+
   .menu-section {
     padding: 40px 0;
   }
@@ -1090,6 +1121,15 @@ body {
   .hero-desc {
     font-size: 12px;
     max-width: 70vw;
+  }
+
+  .hero-hours {
+    margin-top: 16px;
+    font-size: 11px;
+  }
+
+  .hero-hours-note {
+    font-size: 9px;
   }
 
   .menu-section {
