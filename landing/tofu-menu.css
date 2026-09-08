@@ -394,8 +394,8 @@ body {
   width: 100vw;
   height: calc(100vh + 140px);
   background-image: url('assets/tofu-hero-bg.png');
-  background-size: 110% auto;
-  background-position: right 20%;
+  background-size: 140% auto;
+  background-position: right -10%;
   z-index: -1;
   mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
