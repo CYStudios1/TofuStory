@@ -895,11 +895,6 @@ body {
     padding-top: 10px;
   }
 
-  .hero-overlay {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
   .landing-section::before {
     background-image: url('assets/sool-hero-bg-mobile.png');
     background-position: center 70%;
@@ -1118,11 +1113,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
-  }
-
-  .hero-overlay {
-    margin-top: auto;
-    margin-bottom: auto;
   }
 
   .landing-section::before {
