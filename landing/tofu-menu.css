@@ -971,8 +971,9 @@ body {
   }
 
   .landing-section::before {
+    background-image: url('assets/tofu-hero-bg-mobile.png');
     background-position: center 70%;
-    height: 100vh;
+    background-size: cover;
     top: -120px;
     height: calc(100vh + 120px);
   }
@@ -1251,7 +1252,9 @@ body {
   }
 
   .landing-section::before {
+    background-image: url('assets/tofu-hero-bg-mobile.png');
     background-position: center 70%;
+    background-size: cover;
     top: -110px;
     height: calc(100vh + 110px);
   }
