@@ -966,6 +966,25 @@ body {
     text-shadow: 0 1px 12px rgba(255, 255, 255, 0.8), 0 0 30px rgba(235, 225, 210, 0.6);
   }
 
+  .hero-subtitle {
+    font-weight: 500;
+    color: rgba(44, 44, 44, 0.75);
+  }
+
+  .hero-desc {
+    font-weight: 400;
+    color: rgba(44, 44, 44, 0.85);
+  }
+
+  .hero-hours {
+    font-weight: 400;
+    color: rgba(44, 44, 44, 0.75);
+  }
+
+  .hero-hours-note {
+    color: rgba(44, 44, 44, 0.6);
+  }
+
   .hero-title {
     font-size: 42px;
   }
