@@ -397,8 +397,8 @@ body {
   background-size: 130%;
   background-position: 75% 45%;
   z-index: -1;
-  mask-image: linear-gradient(to bottom, black 55%, transparent 85%);
-  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 85%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 95%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 95%);
 }
 
 .landing-section::after {
