@@ -409,12 +409,13 @@ body {
   transform: translateX(-50%);
   width: 100vw;
   height: calc(100vh + 140px);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: linear-gradient(to right, rgba(235, 225, 210, 0.7) 10%, rgba(235, 225, 210, 0.3) 35%, transparent 55%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: -1;
   pointer-events: none;
-  mask-image: linear-gradient(to right, black 10%, transparent 45%);
-  -webkit-mask-image: linear-gradient(to right, black 10%, transparent 45%);
+  mask-image: linear-gradient(to right, black 10%, transparent 50%);
+  -webkit-mask-image: linear-gradient(to right, black 10%, transparent 50%);
 }
 
 /* --- Menu Rows --- */
