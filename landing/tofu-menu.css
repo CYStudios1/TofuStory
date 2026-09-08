@@ -260,6 +260,11 @@ body {
   color: rgba(44, 44, 44, 0.5);
 }
 
+/* --- Mobile Hours (hidden on desktop) --- */
+.hero-hours-mobile {
+  display: none;
+}
+
 /* --- Section Headings --- */
 .section-heading {
   text-align: center;
@@ -966,8 +971,9 @@ body {
   /* --- Hero --- */
   .hero-text {
     height: calc(100vh - 140px);
+    flex-direction: column;
     align-items: flex-start;
-    padding-top: 50%;
+    padding-top: 10px;
   }
 
   .landing-section::before {
@@ -996,13 +1002,28 @@ body {
   }
 
   .hero-hours {
-    margin-top: 20px;
-    font-size: 12px;
+    display: none;
   }
 
-  .hero-hours-note {
-    font-size: 10px;
-    max-width: 45vw;
+  .hero-hours-mobile {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(44, 44, 44, 0.55);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .hero-hours-mobile .hero-hours-note {
+    font-size: 9px;
+    color: rgba(44, 44, 44, 0.4);
+    margin-top: 4px;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* --- Sections --- */
@@ -1247,7 +1268,9 @@ body {
   /* --- Hero --- */
   .hero-text {
     height: calc(100vh - 110px);
-    padding-top: 47%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
   }
 
   .landing-section::before {
@@ -1276,13 +1299,15 @@ body {
   }
 
   .hero-hours {
-    margin-top: 16px;
-    font-size: 11px;
+    display: none;
   }
 
-  .hero-hours-note {
-    font-size: 9px;
-    max-width: 45vw;
+  .hero-hours-mobile {
+    font-size: 10px;
+  }
+
+  .hero-hours-mobile .hero-hours-note {
+    font-size: 8px;
   }
 
   /* --- Sections --- */

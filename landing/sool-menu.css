@@ -356,6 +356,11 @@ body {
   color: rgba(245, 237, 224, 0.6);
 }
 
+/* --- Mobile Hours (hidden on desktop) --- */
+.hero-hours-mobile {
+  display: none;
+}
+
 /* --- Pre-heading (SOOL 술 STORY) --- */
 .section-pre-heading {
   text-align: center;
@@ -885,8 +890,9 @@ body {
 
   .hero-text {
     height: calc(100vh - 140px);
+    flex-direction: column;
     align-items: flex-start;
-    padding-top: 50%;
+    padding-top: 10px;
   }
 
   .landing-section::before {
@@ -920,13 +926,28 @@ body {
   }
 
   .hero-hours {
-    margin-top: 20px;
-    font-size: 12px;
+    display: none;
   }
 
-  .hero-hours-note {
-    font-size: 10px;
-    max-width: 45vw;
+  .hero-hours-mobile {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    color: rgba(245, 237, 224, 0.6);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .hero-hours-mobile .hero-hours-note {
+    font-size: 9px;
+    color: rgba(245, 237, 224, 0.45);
+    margin-top: 4px;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .menu-section {
@@ -1089,8 +1110,9 @@ body {
 
   .hero-text {
     height: calc(100vh - 110px);
+    flex-direction: column;
     align-items: flex-start;
-    padding-top: 47%;
+    padding-top: 10px;
   }
 
   .landing-section::before {
@@ -1125,13 +1147,15 @@ body {
   }
 
   .hero-hours {
-    margin-top: 16px;
-    font-size: 11px;
+    display: none;
   }
 
-  .hero-hours-note {
-    font-size: 9px;
-    max-width: 45vw;
+  .hero-hours-mobile {
+    font-size: 10px;
+  }
+
+  .hero-hours-mobile .hero-hours-note {
+    font-size: 8px;
   }
 
   .menu-section {
