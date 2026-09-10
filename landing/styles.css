@@ -133,7 +133,7 @@ body {
 /* --- CTA Buttons --- */
 .cta-btn {
   position: absolute;
-  bottom: calc(28% + 58px);
+  bottom: calc(28% + 60px);
   display: inline-flex;
   align-items: center;
   gap: 0;
@@ -142,7 +142,7 @@ body {
   font-size: 13.5px;
   font-weight: 400;
   letter-spacing: 0.03em;
-  padding: 12px 24px;
+  padding: 14px 24px;
   border-radius: 6px;
   cursor: pointer;
   overflow: hidden;
@@ -262,8 +262,8 @@ body {
 
   .cta-btn {
     font-size: 13px;
-    padding: 12px 24px;
-    bottom: calc(22% - 2px);
+    padding: 14px 24px;
+    bottom: 22%;
   }
 
   /* Tap expand on mobile */
@@ -306,8 +306,8 @@ body {
 
   .cta-btn {
     font-size: 11px;
-    padding: 10px 20px;
-    bottom: calc(20% - 2px);
+    padding: 12px 20px;
+    bottom: 20%;
   }
 
   .cta-arrow {
